@@ -3,56 +3,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Campain News</title>
-    <link rel="stylesheet" href="../primary/ccs/footer.css"/>
-    <link rel="stylesheet" href="../primary/ccs/style.css" />
+    <link rel="stylesheet" href=".../primary/ccs/footer.css"/>
+    <link rel="stylesheet" href=".../primary/ccs/style.css" />
 </head>
 <html lang="en" id="page-container">
-    <header>
-        <div style="border: 2px solid rgb(148, 148, 148); background-color: rgb(213, 255, 255);">
-            <H1 style="padding-left: 3%;">Meraki Campain New's</H1>
-            <h4 style="display: inline-block; color: rgb(80, 80, 80); padding-left: 3%;">May 2024 Election</h4>
-            <h4 style="float: right; text-align: right; padding-right: 15px; color: rgb(255, 96, 96); padding-left: 3%;">This page is not endorsed by Election Candidates</h4>
-        </div>
-    </header>
-    
-    <body style="background-color: aliceblue;">
-        <div style="padding-left: 10px; margin-top: 15px; border: 2px solid rgb(148, 148, 148); background-color: rgb(194, 230, 230);">
-            <div style="padding: 10px;">
-                <h2>Toby's Running For SLC Presedent</h2>
-                <a style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
+    <body id="content-wrap">
+        <nav class="navbar">
+            <ul>
+                <li><a href="./home">Home</a></li>
+                <li><a href="home">News</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div style="border: 2px solid rgb(148, 148, 148); background-color: rgb(213, 255, 255);">
+                <H1 style="padding-left: 3%;">Meraki Campain New's</H1>
+                <h4 style="display: inline-block; color: rgb(80, 80, 80); padding-left: 3%;">May 2024 Election</h4>
+                <h4 style="float: right; text-align: right; padding-right: 15px; color: rgb(255, 96, 96); padding-left: 3%;">This page is not endorsed by Election Candidates</h4>
             </div>
-        </div>
-
-        <div style="padding-left: 10px; margin-top: 15px; border: 2px solid rgb(148, 148, 148); background-color: rgb(194, 230, 230);">
-            <div style="padding: 10px;">
-                <h2>Rumors Run Rampet At Meraki</h2>
-                <a style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">To address the roomers that have been going around campus as of lait. No Toby has not had his lisence revoked. His lisence was stolen by a thief he encountered while out side of school.</a>
-                <div id="MiniMsg1_bAdjust" style="position: relative; max-width: 97%; display: inline-block; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; margin-top: 15px; margin-bottom: 15px; border: 2px solid rgb(94, 94, 94); background-color: rgb(195, 211, 211);">
-                    <h3>Toby's Testimony</h3>
+        </header>
+    
+        <body style="background-color: aliceblue;">
+            <div style="padding-left: 10px; margin-top: 15px; border: 2px solid rgb(148, 148, 148); background-color: rgb(194, 230, 230);">
+                <div style="padding: 10px;">
+                    <h2>Toby's Running For SLC Presedent</h2>
                     <a style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
                 </div>
-                <button style="border-radius: 50px; position: absolute; transform: translate(-17px, 15px); display: left, inline-block;" onclick="MiniMsg1_a()">
-                    <ion-icon style="font-size: larger;" name="pin"></ion-icon>
-                </button>
-                <div id="MiniMsg1_b" style="display: none; margin-top: 15px; min-height: 50px; padding: 3px; max-width: 20%; border: 2px solid rgb(148, 148, 148); background-color: rgb(194, 230, 230); float: right;">
-                    <a style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: small;">We've all heard the expression, "The walls have ears" but you know what they dont have? Mouths! This is a short reminder to be carfull about what you say of others. You never know who might overhear you or if what you are saying can get you into trouble or hurt others.</a>
-
-                    <script>
-                        function MiniMsg1_a() {
-                          var x = document.getElementById("MiniMsg1_b");
-                          var y = document.getElementById("MiniMsg1_bAdjust")
-                          if (x.style.display === "none") {
-                            x.style.display = "inline-block";
-                            y.style.maxWidth = "75%";
-                          } else {
-                            x.style.display = "none";
-                            y.style.maxWidth = "97%";
-                          }
-                        }
-                        </script>
+            </div>
+    
+            <div style="padding-left: 10px; margin-top: 15px; border: 2px solid rgb(148, 148, 148); background-color: rgb(194, 230, 230);">
+                <div style="padding: 10px;">
+                    <h2>Rumors Run Rampet At Meraki</h2>
+                    <a style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">To address the roomers that have been going around campus as of lait. No Toby has not had his lisence revoked. His lisence was stolen by a thief he encountered while out side of school.</a>
+                    <div id="MiniMsg1_bAdjust" style="position: relative; max-width: 97%; display: inline-block; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; margin-top: 15px; margin-bottom: 15px; border: 2px solid rgb(94, 94, 94); background-color: rgb(195, 211, 211);">
+                        <h3>Toby's Testimony</h3>
+                        <a style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
+                    </div>
+                    <button style="border-radius: 50px; position: absolute; transform: translate(-17px, 15px); display: left, inline-block;" onclick="MiniMsg1_a()">
+                        <ion-icon style="font-size: larger;" name="pin"></ion-icon>
+                    </button>
+                    <div id="MiniMsg1_b" style="display: none; margin-top: 15px; min-height: 50px; padding: 3px; max-width: 20%; border: 2px solid rgb(148, 148, 148); background-color: rgb(194, 230, 230); float: right;">
+                        <a style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: small;">We've all heard the expression, "The walls have ears" but you know what they dont have? Mouths! This is a short reminder to be carfull about what you say of others. You never know who might overhear you or if what you are saying can get you into trouble or hurt others.</a>
+    
+                        <script>
+                            function MiniMsg1_a() {
+                              var x = document.getElementById("MiniMsg1_b");
+                              var y = document.getElementById("MiniMsg1_bAdjust")
+                              if (x.style.display === "none") {
+                                x.style.display = "inline-block";
+                                y.style.maxWidth = "75%";
+                              } else {
+                                x.style.display = "none";
+                                y.style.maxWidth = "97%";
+                              }
+                            }
+                            </script>
+                    </div>
                 </div>
             </div>
-        </div>
+        </body>
+
+        <main>
+    
+        </main>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
