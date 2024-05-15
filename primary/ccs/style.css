@@ -1,15 +1,3 @@
-body{
-    margin: 0px;
-}
-main{
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-h1{
-    text-align: center;
-}
 .navbar {
     position: sticky;
     top: 0;
@@ -52,19 +40,4 @@ h1{
   
   #col {
     flex-direction: column;
-  }
-  .buttonhoveve p:hover{
-    background-color: #6d6d6d;
-  }
-  .buttonhoveve button{
-    cursor: pointer;font-size: 25px; background-color: rgba(0, 0, 0, 0);width: 180px; color: white;border: none;
-  }
-  .overlap1eve {
-    overflow-y: auto; /*Fix Overflow Scroll*/
-    position: fixed;
-    background-color: rgb(97, 104, 110);
-    width: 90.25%;
-    min-height: 640px;
-    left: 9.75%;
-    top: 239px;
   }

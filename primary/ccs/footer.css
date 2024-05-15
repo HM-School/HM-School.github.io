@@ -14,7 +14,7 @@
     height: 2.5rem;            /* Footer height */
   }
 .version u::before{
-    content: "v1.6-alpha";
+    content: "v1.0";
 }
 footer {
     background-color: #777;
