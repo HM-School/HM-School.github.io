@@ -1,0 +1,70 @@
+body{
+    margin: 0px;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+h1{
+    text-align: center;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(49, 49, 49);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    border: 2px solid rgb(92, 92, 92);
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(56, 56, 56);
+}
+.navbar li{
+    float: left;
+    border: 2px solid rgb(59, 59, 59);
+}
+
+.content {
+    width: 9.5%;
+    min-height: 636px;
+    border: 2px solid #6d6d6d;
+    background-color: #353535;
+    display: flex;
+  }
+  
+  .box {
+    padding-left: 0px;
+    height: 33px;
+  }
+  
+  #col {
+    flex-direction: column;
+  }
+  .buttonhoveve p:hover{
+    background-color: #6d6d6d;
+  }
+  .buttonhoveve button{
+    cursor: pointer;font-size: 25px; background-color: rgba(0, 0, 0, 0);width: 180px; color: white;border: none;
+  }
+  .overlap1eve {
+    overflow-y: auto; /*Fix Overflow Scroll*/
+    position: fixed;
+    background-color: rgb(97, 104, 110);
+    width: 90.25%;
+    min-height: 640px;
+    left: 9.75%;
+    top: 239px;
+  }
