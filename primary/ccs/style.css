@@ -21,8 +21,13 @@
     background-color: rgb(56, 56, 56);
 }
 .navbar li{
-    float: right;
     border: 2px solid rgb(59, 59, 59);
+}
+.navbar li .right{
+    float: right;
+}
+.navbar li .left{
+    float: left;
 }
 
 .content {
