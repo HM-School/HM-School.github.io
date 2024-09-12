@@ -1,2 +1,2 @@
 # Site Home Page Link
-[HM-School.github.io](https://HM-School.github.io)
+[https://info-hub-schools.vercel.app](https://info-hub-schools.vercel.app)
