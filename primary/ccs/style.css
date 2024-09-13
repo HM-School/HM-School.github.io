@@ -112,5 +112,5 @@ main{
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: rgb(31, 42, 71);
-    border-radius: 10px;
+    border-radius: 0px;
   }
