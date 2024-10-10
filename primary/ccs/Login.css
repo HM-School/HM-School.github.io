@@ -3,7 +3,7 @@
     width: 400px;
     height: 440px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
+    border: 2px solid #162938;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
@@ -58,7 +58,7 @@
     width: 45px;
     height: 45px;
     font-size: 10em;
-    color: #bcd2e4;
+    color: #162938;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,7 @@
 
 .form-box h2 {
     font-size: 2em;
-    color: #bcd2e4;
+    color: #162938;
     text-align: center;
 }
 
@@ -75,7 +75,7 @@
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #bcd2e4;
+    border-bottom: 2px solid #162938;
     margin: 30px 0;
 }
 
@@ -85,7 +85,7 @@
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #bcd2e4;
+    color: #162938;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -103,7 +103,7 @@
     border: none;
     outline: none;
     font-size: 1em;
-    color: #bcd2e4;
+    color: #162938;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -112,7 +112,7 @@
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #bcd2e4;
+    color: #162938;
     line-height: 57px;
 }
 
@@ -124,7 +124,7 @@ input:-internal-autofill-selected {
 
 .remember-forgot {
     font-size: .9em;
-    color: #bcd2e4;
+    color: #162938;
     font-weight: 500;
     margin: -15 0 15px;
     display: flex;
@@ -132,12 +132,12 @@ input:-internal-autofill-selected {
 }
 
 .remember-forgot label input {
-    accent-color: #bcd2e4;
+    accent-color: #162938;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #bcd2e4;
+    color: #162938;
     text-decoration: underline;
 }
 
