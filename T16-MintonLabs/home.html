@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://info-hub-schools.vercel.app/primary/ccs/Login.css"/>
 </head>
 
-<body id="content-wrap">
+<body id="content-wrap" style="z-index: 4;">
     <nav class="navbar">
         <ul>
             <li><img class="right" src="https://info-hub-schools.vercel.app/assets/images/Team16-Logo+Name.png" width="auto" height="49px" alt="MerakiLogo"></li>
@@ -77,10 +77,7 @@
         </div>
     </div>
 
-    <main>
-        <!--
-            Main Body
-        -->
+    <main style="z-index: 3;">
 
         <h1 style="text-align: center;">Minton Labs Home</h1>
         <p style="padding: 50px;">
@@ -89,30 +86,79 @@
             Our business incorporates Chemistry and Art recommended for families with children aging from 5 to 10. It is well suited for minors and preteens.
 
             We focus on incorporating Science into making art projects. We believe here at Minton Labs that this can be a fun experience for small children as they can both paint and be educated.
-
         </p>
 
+        <h1 style="text-align: center;">Our Team</h1>
+        <style>
+
+            #st1 {
+                table, th, td {
+                  border:1px solid black;
+                  border-collapse: collapse;
+                  border-radius: 10px;
+                }
+                td {
+                    text-align: left;
+                    padding-left: 20px;
+                }
+                tr {
+                    max-height: 145px;
+                }
+                a {
+                    font-size: 30px;
+                    position: relative;
+                    left: 30px;
+                    bottom: 30px;
+                }
+                img {
+                    width: 100px;
+                    height: auto;
+                    z-index: 3;
+                    padding-top: 7px;
+                }
+            }
+        </style>
+            
+            <table id="st1" style="width:100%; border-radius: 5px;">
+              <!-- <tr>
+                <th style="width:35%"></th>
+                <th style="width:25%">Role</th>
+                <th style="width:25%">Discription</th>
+              </tr> -->
+              <tr style="max-height: 145px;">
+                <td><img src="../assets/images/Colton-Duart-pfp.png" alt="C.D. ProfilePic"><a>Colton Duart</a></td>
+                <td>Project Manager</td>
+                <td>This is a Discription for a project manager</td>
+              </tr>
+              <trs tyle="max-height: 145px;">
+                <td><img src="../assets/images/Hyrum-McFadyen-pfp.png" alt="H.M. ProfilePic"><a>Hyrum McFadyen</a></td>
+                <td>Project Manager</td>
+                <td>This is a Discription for a project manager</td>
+              </tr>
+              <tr style="max-height: 145px;">
+                <td><img src="../assets/images/Julian-Hazard-pfp.png" alt="J.H.-ProfilePic"><a>Julian Hazard</a></td>
+                <td>Project Manager</td>
+                <td>This is a Discription for a project manager</td>
+              </tr>
+              <tr style="max-height: 145px;">
+                <td><img src="../assets/images/Rylan-Purdue-pfp.png" alt="R.P.-ProfilePic"><a>Rylan Purdue</a></td>
+                <td>Project Manager</td>
+                <td>This is a Discription for a project manager</td>
+              </tr>
+              <tr style="max-height: 145px;">
+                <td><img src="../assets/images/Samuel-Minton-pfp.png" alt="S.M.-ProfilePic"><a>Samuel Minton</a></td>
+                <td>Project Manager</td>
+                <td>This is a Discription for a project manager</td>
+              </tr>
+              <tr style="max-height: 145px;">
+                <td><img src="../assets/images/Ruben-Silbaugh-pfp.png" alt="R.S.-ProfilePic"><a>Ruben Silbaugh</a></td>
+                <td>Project Manager</td>
+                <td>This is a Discription for a project manager</td>
+              </tr>
+            </table>
+            <div style="height: 50px;"></div>
+
         <div id="data-container"></div>
-
-  <script>
-    async function fetchData() {
-      try {
-        const response = await fetch('http://localhost:3000/data');
-        const data = await response.json();
-        const container = document.getElementById('data-container');
-
-        data.forEach(item => {
-          const div = document.createElement('div');
-          div.textContent = JSON.stringify(item);
-          container.appendChild(div);
-        });
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    }
-
-    fetchData();
-  </script>
 
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

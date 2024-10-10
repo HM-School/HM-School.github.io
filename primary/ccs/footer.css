@@ -12,6 +12,7 @@
     bottom: 0;
     width: 100%;
     height: 2.5rem;            /* Footer height */
+    border-radius: 10px;
   }
 .version u::before{
     content: "v2.0-Beta";
