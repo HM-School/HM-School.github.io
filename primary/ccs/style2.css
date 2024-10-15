@@ -115,3 +115,33 @@ main{
     background: rgb(31, 42, 71);
     border-radius: 0px;
   }
+
+  #st1 {
+    table, th, td {
+      border:1px solid black;
+      border-collapse: collapse;
+      border-radius: 10px;
+      background: transparent;
+      background-color: rgba(200, 200, 255, 0.5);
+      backdrop-filter: blur(2px);
+    }
+    td {
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    tr {
+        max-height: 145px;
+    }
+    a {
+        font-size: 30px;
+        position: relative;
+        left: 30px;
+        bottom: 30px;
+    }
+    img {
+        width: 100px;
+        height: auto;
+        padding-top: 7px;
+    }
+}
