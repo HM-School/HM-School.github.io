@@ -3,6 +3,9 @@ const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 const btnPopup = document.querySelector('#btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
+const submitBtn = document.querySelector('.btn');
+
+
 
 registerLink.addEventListener('click', () => {
     wrapper.classList.add('active');
@@ -18,4 +21,9 @@ btnPopup.addEventListener('click', () => {
 
 iconClose.addEventListener('click', () => {
     wrapper.classList.remove('active-popup');
+});
+
+submitBtn.addEventListener('click', () => {
+    const test = submitBtn.getAttribute('data-user');
+    console.log(test);
 });
