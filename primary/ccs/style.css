@@ -118,7 +118,8 @@ main{
 
   .flexContainer-1 {
     display: flex;
-    background-color: DodgerBlue;
+    background: rgba(255,255,255, 0.5);
+    backdrop-filter: blur(20px);
   }
   
   .flexContainer-1 .div{
