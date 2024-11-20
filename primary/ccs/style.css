@@ -120,6 +120,7 @@ main{
     display: flex;
     background: rgba(255,255,255, 0.1);
     backdrop-filter: blur(2px);
+    padding: 10px;
   }
   
   .flexContainer-1 .div{
