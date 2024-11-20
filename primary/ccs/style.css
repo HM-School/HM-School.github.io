@@ -135,8 +135,9 @@ main{
   }
 
   .flexContainer-1 div .image-1{
-    background-image: url("https://info-hub-schools.vercel.app/assets/images/image000000.png");
+    background-image: url("https://info-hub-schools.vercel.app/assets/images/image000000.png") no-repeat;
     background-size: contain;
+    background-position: center;
     margin: 0px;
     padding: 0px;
     width: auto;
