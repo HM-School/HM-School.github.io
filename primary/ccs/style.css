@@ -123,7 +123,7 @@ main{
     padding: 10px;
   }
   
-  .flexContainer-1 .div{
+  .flexContainer-1 div{
     background-color: rgba(255,255,255, 0.5);;
     margin: 10px;
     padding: 20px;
