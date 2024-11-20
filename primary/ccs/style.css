@@ -138,6 +138,6 @@ main{
     background-image: url("https://info-hub-schools.vercel.app/assets/images/image000000.png");
     margin: 0px;
     padding: 0px;
-    width: 100%;
+    width: auto;
     height: 100px;
   }
