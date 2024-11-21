@@ -132,7 +132,6 @@ main{
     font-size: 30px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
-    margin-left: 50%;
     left: 122;
   }
 
@@ -140,6 +139,7 @@ main{
     background-image: url("https://info-hub-schools.vercel.app/assets/images/image000000.png");
     background-repeat: no-repeat;
     background-size: contain;
+    margin-left: 50%;
     margin: 0px;
     padding: 0px;
     width: 150px;
