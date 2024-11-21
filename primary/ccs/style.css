@@ -132,14 +132,15 @@ main{
     font-size: 30px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
+    margin-left: 50%;
+    left: 122;
   }
 
   .flexContainer-1 div .image-1{
     background-image: url("https://info-hub-schools.vercel.app/assets/images/image000000.png") no-repeat;
     background-size: contain;
-    background-position: center;
     margin: 0px;
     padding: 0px;
-    width: auto;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
