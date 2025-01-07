@@ -123,6 +123,7 @@ main{
     border-radius: 10px;
     backdrop-filter: blur(2px);
     padding: 10px;
+    min-width: 0px;
   }
   
   .flexContainer-1 div{
