@@ -3,7 +3,7 @@ body{
     padding: 0px;
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
-    background: url('../../assets/images/Abovetheclouds.png') no-repeat;
+    background: url('/images/Abovetheclouds.png') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

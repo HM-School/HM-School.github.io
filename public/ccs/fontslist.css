@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Horizon'; /* Name your font family */
-    src: url('../fonts/Horizon/Horizon-bold.ttf'); /* Locate the .ttf file within your directory*/
+    src: url('/fonts/Horizon/Horizon-bold.ttf'); /* Locate the .ttf file within your directory*/
   }
   
 /*

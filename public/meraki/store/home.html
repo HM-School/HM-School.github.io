@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" id="page-container"></html>
+<html lang="en" id="page-container">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Info Hub</title>
-    <link rel="icon" href="https://info-hub-schools.vercel.app/assets/images/MerakiLogo.png">
+    <title>Info Hub - Store</title>
+    <link rel="icon" href="https://info-hub-schools.vercel.app/images/MerakiLogo.png">
     <link rel="canonical" href="https://info-hub-schools.vercel.app/meraki/home.html">
-    <link rel="stylesheet" href="https://info-hub-schools.vercel.app/primary/ccs/footer.css"/>
-    <link rel="stylesheet" href="https://info-hub-schools.vercel.app/primary/ccs/style.css"/>
-    <link rel="stylesheet" href="https://info-hub-schools.vercel.app/primary/ccs/Login.css"/>
+    <link rel="stylesheet" href="https://info-hub-schools.vercel.app/ccs/footer.css"/>
+    <link rel="stylesheet" href="https://info-hub-schools.vercel.app/ccs/style.css"/>
+    <link rel="stylesheet" href="https://info-hub-schools.vercel.app/ccs/Login.css"/>
 </head>
-
 <body id="content-wrap">
     <nav class="navbar" style="z-index:100;">
         <ul>
-            <li><img class="right" src="../../assets/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></li>
+            <li><img class="right" src="/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></li>
             <li><button class="right" id="btnLogin-popup">Login</a></li>
-            <li><a class="left" href="../../meraki/home.html">Home</a></li>
-            <li><a class="left" href="">News</a></li>
-            <li><a class="left" href="https://info-hub-schools.vercel.app/meraki/store/main.html">Store</a></li>
+            <li><a class="left" href="/meraki/home.html">Home</a></li>
+            <li><a class="left" href="/meraki/news/home.html">News</a></li>
+            <li><a class="left" href="/meraki/store/home.html">Store</a></li>
         </ul>
     </nav>
 
-    <div class="wrapper" style="margin: auto; margin-top: 10px; margin-left:50%; position: absolute; left:-200px; z-index: 5;">
+    <div class="wrapper" style="margin: auto; margin-top: 10px; margin-left:50%; position: absolute; left: -200px; z-index: 5;">
         <span class="icon-close" style="z-index:101;">
         <ion-icon name="close-circle-outline"></ion-icon>
     </span>
@@ -31,12 +30,12 @@
             <form action="#" onsubmit="return false;">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
+                    <input id="email" name="email" type="email" autocomplete="on" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input name="password" id="password" type="password" autocomplete="current-password" required>
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
@@ -80,18 +79,23 @@
     </div>
 
     <main style="z-index:1;">
-        <!--
-            Main Body
-        -->
-
-        <h1 style="text-align: center;">News</h1>
+        <h1 style="text-align: center;">Store</h1>
+        <div class="flexContainer-1">
+            <div>
+                <div class="image-1">
+                    
+                </div>
+                <form>
+                    <button style="width: 200px;color: rgb(68, 68, 68);background-color: rgba(214, 235, 248, 1); border-radius: 5px; border-color: black;" formaction="https://info-hub-schools.vercel.app/meraki/store/k&amp;b's/products/slime.html">K&amp;B's Crafts</button>
+                </form>
+            </div>
+        </div>
+        <div id="data-container"></div>
 
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="../../primary/javaScript/Login-Register.js"></script>
+    <script src="https://info-hub-schools.vercel.app/primary/javaScript/Login-Register.js"></script>
 </body>
-<footer id="footert1" class="version">
-    Hosted with <a href="https://vercel.com"target="_blank" style="color: rgba(200, 200, 255, 0.75);"><b>Vercel</b></a>. &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<u></u>
-    </footer>
+
 </html>

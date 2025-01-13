@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" id="page-container">
+<html lang="en" id="page-container"></html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Info Hub</title>
-    <link rel="icon" href="https://info-hub-schools.vercel.app/assets/images/MerakiLogo.png">
+    <link rel="icon" href="https://info-hub-schools.vercel.app/images/MerakiLogo.png">
     <link rel="canonical" href="https://info-hub-schools.vercel.app/meraki/home.html">
-    <link rel="stylesheet" href="https://info-hub-schools.vercel.app/primary/ccs/footer.css"/>
-    <link rel="stylesheet" href="../../../../primary/ccs/style3.css"/>
-    <link rel="stylesheet" href="https://info-hub-schools.vercel.app/primary/ccs/Login.css"/>
+    <link rel="stylesheet" href="https://info-hub-schools.vercel.app/ccs/footer.css"/>
+    <link rel="stylesheet" href="https://info-hub-schools.vercel.app/ccs/style.css"/>
+    <link rel="stylesheet" href="https://info-hub-schools.vercel.app/ccs/Login.css"/>
 </head>
 
 <body id="content-wrap">
-
     <nav class="navbar" style="z-index:100;">
         <ul>
-            <li><img class="right" src="https://info-hub-schools.vercel.app/assets/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></li>
+            <li><img class="right" src="/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></li>
             <li><button class="right" id="btnLogin-popup">Login</a></li>
-            <li><a class="left" href="https://info-hub-schools.vercel.app/meraki/home.html">Home</a></li>
-            <li><a class="left" href="https://info-hub-schools.vercel.app/meraki/news/home.html">News</a></li>
-            <li><a class="left" href="https://info-hub-schools.vercel.app/meraki/store/main.html">Store</a></li>
+            <li><a class="left" href="/meraki/home.html">Home</a></li>
+            <li><a class="left" href="/meraki/news/home.html">News</a></li>
+            <li><a class="left" href="/meraki/store/home.html">Store</a></li>
         </ul>
     </nav>
 
-    <div class="wrapper" style="margin: auto; margin-top: 10px; margin-left:50%; position: absolute; left: -200px; z-index: 5;">
+    <div class="wrapper" style="margin: auto; margin-top: 10px; margin-left:50%; position: absolute; left:-200px; z-index: 5;">
         <span class="icon-close" style="z-index:101;">
         <ion-icon name="close-circle-outline"></ion-icon>
-        </span>
+    </span>
         <div class="form-box login">
             <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Login</h2>
             <form action="#" onsubmit="return false;">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input id="email" name="email" type="email" autocomplete="on" required>
+                    <input type="email" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input name="password" id="password" type="password" autocomplete="current-password" required>
+                    <input type="password" required>
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
@@ -85,31 +84,14 @@
             Main Body
         -->
 
-
-  <!-- <script>
-    async function fetchData() {
-      try {
-        const response = await fetch('http://localhost:3000/data');
-        const data = await response.json();
-        const container = document.getElementById('data-container');
-
-        data.forEach(item => {
-          const div = document.createElement('div');
-          div.textContent = JSON.stringify(item);
-          container.appendChild(div);
-        });
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    }
-
-    fetchData();
-  </script> -->
+        <h1 style="text-align: center;">News</h1>
 
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://info-hub-schools.vercel.app/primary/javaScript/Login-Register.js"></script>
+    <script src="../../primary/javaScript/Login-Register.js"></script>
 </body>
-
+<footer id="footert1" class="version">
+    Hosted with <a href="https://vercel.com"target="_blank" style="color: rgba(200, 200, 255, 0.75);"><b>Vercel</b></a>. &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<u></u>
+    </footer>
 </html>
