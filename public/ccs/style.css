@@ -134,11 +134,3 @@ main{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
   }
-
-  .flexContainer-1 div .image-1{
-    background-image: url("https://info-hub-schools.vercel.app/images/image000000.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0px;
-    height: 150px;
-  }
