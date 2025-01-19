@@ -1,0 +1,30 @@
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+  #footert1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    backdrop-filter: blur(2px);
+  }
+.version u::before{
+    content: "v3.1-Beta";
+}
+footer {
+    background-color: rgba(100, 100, 100, 0.589);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: left;
+    text-indent: 10px;
+    line-height: 250%;
+    overflow: hidden;
+  }

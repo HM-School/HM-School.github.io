@@ -1,0 +1,34 @@
+class uses a .
+id uses a #
+span will allow you to modify the text within an "a" or "p" string line.
+a, p lines can be stacked within one another as well!
+But remember the a places the text on the current line while p will place it on the next as if you pressed enter after the phrase.
+
+<html>
+    <head>
+        <style>
+            .note {
+              font-size: 120%;
+              color: rgb(0, 255, 0);
+            }
+
+            .navbar {
+                    color: rgb(255,255,255)
+            }
+
+            #not-a-navbar {
+                color: rgb(255,0,0);
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>My <span class="note">Important</span> Heading</h1>
+        <p>This is some <span class="note">important</span> text.</p>
+
+        <a class="navbar">This text is made white because of the navbar class.</a>
+        <a id="not-a-navbar">This text is made red because of the navbar id.</a>
+        <p>This text is plain until you see it turn <a style="color: rgb(255,0,0)">Red</a> partway through the text</p>
+
+    </body>
+</html>
