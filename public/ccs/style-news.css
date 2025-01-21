@@ -122,8 +122,8 @@ main{
   }
 
   .flexbox-element-container-1 {
-    background-color: #353535;
+    background-color: rgba(56, 56, 56, 0.75);
     border-radius: 5px;
-    border-width: 2px;
-    border-color: rgba(56, 56, 56, 0.5);
+    border: 2px solid rgba(59, 59, 59, 0.25);
+    backdrop-filter: blur(5px);
   }
