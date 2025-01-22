@@ -17,7 +17,7 @@
     backdrop-filter: blur(2px);
   }
 .version u::before{
-    content: "v3.1-Beta";
+    content: "v3.2-Beta";
 }
 footer {
     background-color: rgba(100, 100, 100, 0.589);

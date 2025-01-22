@@ -11,65 +11,63 @@ body{
   /* overflow-x: hidden; */  /* Hide horizontal scrollbar */
 }
 main{
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
   color: rgb(199, 202, 204);
 }
 .navbar {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
 .navbar ul{
-    list-style-type: none;
-    background-color: rgba(49, 49, 49, 0);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-    border: 2px solid rgba(92, 92, 92, 0);
+  list-style-type: none;
+  padding: 5px;
+  margin: 0px;
+  overflow: hidden;
 }
 .navbar a{
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    transition: 0.5s;
-}
-.navbar button{
   color: rgba(255, 255, 255, 0.75);
-  background-color: rgba(56, 56, 56, 0.0);
   text-decoration: none;
-  padding: 14px;
+  padding: 15px;
   display: block;
   text-align: center;
   font-weight: 600;
-  font-size: large;
   transition: 0.5s;
 }
-.navbar button:hover{
-  cursor: pointer;
-  background-color: rgba(56, 56, 56, 0.5);
-}
-.navbar a:hover{
-  cursor: pointer;
-  background-color: rgba(56, 56, 56, 0.5);
+.navbar button{
+color: rgba(255, 255, 255, 0.75);
+text-decoration: none;
+padding: 14px;
+display: block;
+text-align: center;
+font-weight: 600;
+font-size: large;
+transition: 0.5s;
 }
 .navbar li .left{
-    float: left;
-    background-color: rgba(59, 59, 59, 0.25);
-    border: 2px solid rgba(59, 59, 59, 0.25);
-    border-radius: 5px;
-}
-.navbar li .right{
-  float: right;
+  float: left;
   background-color: rgba(59, 59, 59, 0.25);
   border: 2px solid rgba(59, 59, 59, 0.25);
   border-radius: 5px;
 }
-
+.navbar li .right{
+float: right;
+background-color: rgba(59, 59, 59, 0.25);
+border: 2px solid rgba(59, 59, 59, 0.25);
+border-radius: 5px;
+}
+.navbar button:hover{
+  cursor: pointer;
+  background-color: rgba(56, 56, 56, 0.5);
+  scale: 1.1;
+  }
+  .navbar a:hover{
+  cursor: pointer;
+  background-color: rgba(56, 56, 56, 0.5);
+  scale: 1.1;
+  }
 .content {
     width: 9.5%;
     min-height: 636px;
@@ -106,7 +104,7 @@ main{
 
   /* width */
   ::-webkit-scrollbar {
-    width: 3px;
+    width: 0px;
   }
   
   /* Track */
@@ -119,6 +117,12 @@ main{
   ::-webkit-scrollbar-thumb {
     background: rgb(31, 42, 71);
     border-radius: 0px;
+  }
+
+
+
+  .flexbox-element-container-0 {
+    display: flex;
   }
 
   .flexbox-element-container-1 {
