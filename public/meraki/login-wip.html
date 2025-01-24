@@ -7,8 +7,7 @@
     <link rel="icon" href="/images/MerakiLogo.png">
     <link rel="canonical" href="/meraki/home.html">
     <link rel="stylesheet" href="/ccs/footer.css"/>
-    <link rel="stylesheet" href="/ccs/style.css"/>
-    <link rel="stylesheet" href="/ccs/Login.css"/>
+    <link rel="stylesheet" href="/ccs/style-login.css"/>
 </head>
 <body id="content-wrap">
     <nav class="navbar" style="z-index:100;">
@@ -20,7 +19,20 @@
 
     <main>
         <div  style="float: right; padding-left: 10px; padding-right: 10px; width:46%; margin: -20px; margin-left: 20px; height: 100%;">
-            <p>Test Phrase</p>
+            <form>
+                <label for="nameInput">Name:</label><br>
+                <input type="text" id="nameInput" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em; width: 200px; height: 2em; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1);">
+                <br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em;padding-top: 0.5em; width: 200px; height: 2em; resize: none; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1); overflow-y: hidden;"></textarea>
+                <br><br>
+                <label for="priority">Priority:</label>
+                <select id="priority">
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+            </form>
         </div>
     </main>
 
