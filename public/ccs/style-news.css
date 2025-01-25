@@ -92,7 +92,6 @@ border-radius: 5px;
   }
   .overlap1eve {
     overflow-y: auto; /*Fix Overflow Scroll*/
-    position: fixed;
     background-color: #6d6d6d;
     width: 90.25%;
     min-height: 640px;
