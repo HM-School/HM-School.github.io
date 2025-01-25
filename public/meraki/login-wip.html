@@ -28,10 +28,16 @@
                 <br><br>
                 <label for="priority">Priority:</label>
                 <select id="priority">
-                    <option>Low</option>
-                    <option>Medium</option>
-                    <option>High</option>
+                    <option value="0" selected>Low</option>
+                    <option value="1">Medium</option>
+                    <option value="2">High</option>
                 </select>
+                <br><br>
+                <!--if you nest the input inside of the label you dont need to use the for property-->
+                <label>
+                    <input type="checkbox" required >
+                    I agree to the terms of use.
+                </label>
             </form>
         </div>
     </main>
