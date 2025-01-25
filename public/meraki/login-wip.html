@@ -19,25 +19,28 @@
 
     <main>
         <div  style="float: right; padding-left: 10px; padding-right: 10px; width:46%; margin: -20px; margin-left: 20px; height: 100%;">
-            <form>
+            <form action="/api/process-form.php" method="post">
                 <label for="nameInput">Name:</label><br>
-                <input type="text" id="nameInput" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em; width: 200px; height: 2em; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1);">
+                <input type="text" id="nameInput" name="name" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em; width: 200px; height: 2em; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1);">
                 <br><br>
                 <label for="message">Message:</label><br>
-                <textarea id="message" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em;padding-top: 0.5em; width: 200px; height: 2em; resize: none; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1); overflow-y: hidden;"></textarea>
+                <textarea id="message" name="message" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em;padding-top: 0.5em; width: 200px; height: 2em; resize: none; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1); overflow-y: hidden;"></textarea>
                 <br><br>
                 <label for="priority">Priority:</label>
-                <select id="priority">
+                <select id="priority" name="priorityLvl">
                     <option value="0" selected>Low</option>
                     <option value="1">Medium</option>
                     <option value="2">High</option>
                 </select>
                 <br><br>
                 <!--if you nest the input inside of the label you dont need to use the for property-->
+                <!--if you use an input type of radio you can make them into a group by using name="group-name"-->
+                <!--only inputs with a name attribute will be submitted to the php-->
                 <label>
-                    <input type="checkbox" required >
+                    <input type="checkbox" name="tos" value="true" required>
                     I agree to the terms of use.
                 </label>
+                <button>Send</button>
             </form>
         </div>
     </main>
