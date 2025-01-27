@@ -2,7 +2,46 @@
     font-family: 'Horizon'; /* Name your font family */
     src: url('/fonts/Horizon/Horizon-bold.ttf'); /* Locate the .ttf file within your directory*/
   }
-  
+@font-face {
+    font-family: 'GothicGodness'; /* Name your font family */
+    src: url('/fonts/gothic_godness/Gothic-Godness.ttf'); /* Locate the .ttf file within your directory*/
+  }
+@font-face {
+    font-family: 'Chillen'; /* Name your font family */
+    src: url('/fonts/chillen/Chillen.ttf'); /* Locate the .ttf file within your directory*/
+  }
+@font-face {
+    font-family: 'Borias'; /* Name your font family */
+    src: url('/fonts/borias/BORIASRegular.ttf'); /* Locate the .ttf file within your directory*/
+  }
+@font-face {
+    font-family: 'BoriasSignature'; /* Name your font family */
+    src: url('/fonts/borias/BoriasSignatureSignature.ttf'); /* Locate the .ttf file within your directory*/
+  }
+@font-face {
+    font-family: 'LordOfDarkMetal'; /* Name your font family */
+    src: url('/fonts/lords_of_dark_metal/LordsofDarkMetal.ttf'); /* Locate the .ttf file within your directory*/
+  }
+@font-face {
+    font-family: 'Mushies'; /* Name your font family */
+    src: url('/fonts/mushies/Mushies-Regular.ttf'); /* Locate the .ttf file within your directory*/
+  }
+@font-face {
+    font-family: 'OldVandalsCrew'; /* Name your font family */
+    src: url('/fonts/old_vandal_crew/OldVandalsCrew.ttf'); /* Locate the .ttf file within your directory*/
+  }
+@font-face {
+    font-family: 'Serpong'; /* Name your font family */
+    src: url('/fonts/serpong/Serpong.otf'); /* Locate the .ttf file within your directory*/
+  }
+@font-face {
+    font-family: 'Virust'; /* Name your font family */
+    src: url('/fonts/virust/VIRUST.ttf'); /* Locate the .ttf file within your directory*/
+  }
+@font-face {
+    font-family: 'ZGZBombing'; /* Name your font family */
+    src: url('/fonts/zgz_bombing_2025/zgz_bombing_2025.ttf'); /* Locate the .ttf file within your directory*/
+  }
 /*
   body {
     font-family: 'CustomFont', sans-serif;
