@@ -130,3 +130,15 @@ border-radius: 5px;
     border: 2px solid rgba(59, 59, 59, 0.25);
     backdrop-filter: blur(5px);
   }
+  .flexbox-element-container-2 {
+    background-color: rgba(56, 56, 56, 0.75);
+    border-radius: 20px;
+    border: 2px solid rgba(59, 59, 59, 0.25);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    
+      display: flex;
+      gap: 16px;
+    
+      justify-content: center;
+  }
