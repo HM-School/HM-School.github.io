@@ -19,12 +19,12 @@
 
     <main>
         <div  style="float: right; padding-left: 10px; padding-right: 10px; width:46%; margin: -20px; margin-left: 20px; height: 100%;">
-            <form action="process-form.php" method="post">
+            <form action="/meraki/process-form.php" method="post">
                 <label for="nameInput">Name:</label><br>
-                <input type="text" id="nameInput" name="name" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em; width: 200px; height: 2em; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1);">
+                <input type="text" id="nameInput" name="name" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em; width: 200px; height: 2em; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1); box-shadow: 0px 0px 3px inset;">
                 <br><br>
                 <label for="message">Message:</label><br>
-                <textarea id="message" name="message" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em;padding-top: 0.5em; width: 200px; height: 2em; resize: none; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1); overflow-y: hidden;"></textarea>
+                <textarea id="message" name="message" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em;padding-top: 0.5em; width: 200px; height: 2em; resize: none; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1); overflow-y: hidden; box-shadow: 0px 0px 3px inset;"></textarea>
                 <br><br>
                 <label for="priority">Priority:</label>
                 <select id="priority" name="priorityLvl">
@@ -40,7 +40,8 @@
                     <input type="checkbox" name="tos" value="true" required>
                     I agree to the terms of use.
                 </label>
-                <button>Send</button>
+                <br><br>
+                <button style=" box-shadow: 0px 0px 5px inset; border-radius: 5px;">Send</button>
             </form>
         </div>
     </main>

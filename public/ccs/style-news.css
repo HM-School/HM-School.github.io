@@ -1,7 +1,7 @@
 body{
   margin: 0px;
   padding: 0px;
-  background: url(/images/Abovetheclouds.png) no-repeat;
+  /*background: url(/images/Abovetheclouds.png) no-repeat;*/
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -11,11 +11,8 @@ body{
   /* overflow-x: hidden; */  /* Hide horizontal scrollbar */
 }
 main{
-  margin-left: 1em;
-  margin-right: 1em;
   padding-bottom: 1em;
-  padding-top: 1em;
-  color: rgb(199, 202, 204);
+  /*color: rgb(199, 202, 204);*/
 }
 .navbar {
   position: sticky;
@@ -63,11 +60,12 @@ border-radius: 5px;
   background-color: rgba(56, 56, 56, 0.5);
   scale: 1.1;
   }
-  .navbar a:hover{
-  cursor: pointer;
-  background-color: rgba(56, 56, 56, 0.5);
-  scale: 1.1;
-  }
+.navbar a:hover{
+cursor: pointer;
+background-color: rgba(56, 56, 56, 0.5);
+scale: 1.1;
+}
+
 .content {
     width: 9.5%;
     min-height: 636px;

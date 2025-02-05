@@ -1,0 +1,40 @@
+#podium {
+    position: absolute;
+    top: 8em;
+    left: 50%;
+    margin-left: -3.5em;
+}
+#podium .first {
+    position: absolute;
+    border: solid black 2px;
+    width: 3em;
+    padding-top: 1em;
+    padding-bottom: 7em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+}
+#podium .second {
+    position: absolute;
+    border: solid black 2px;
+    width: 3em;
+    left: -120px;
+    top: 3em;
+    padding-top: 1em;
+    padding-bottom: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+}
+#podium .third {
+    position: absolute;
+    border: solid black 2px;
+    width: 3em;
+    left: 120px;
+    top: 6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+}

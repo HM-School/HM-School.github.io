@@ -4,6 +4,8 @@ span will allow you to modify the text within an "a" or "p" string line.
 a, p lines can be stacked within one another as well!
 But remember the a places the text on the current line while p will place it on the next as if you pressed enter after the phrase.
 
+@media
+
 <html>
     <head>
         <style>
