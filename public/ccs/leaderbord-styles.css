@@ -162,11 +162,11 @@ body {
     
     #podium-alt {
         position: absolute;
-        left: 75%;
-        margin-left: -10.6em;
+        left: 50%;
         width: 21em;
         color: black;
         border: solid red 2px;
+        flex: 1;
     }
     #block-spacer-1 {
         display: none;
