@@ -4,7 +4,13 @@ span will allow you to modify the text within an "a" or "p" string line.
 a, p lines can be stacked within one another as well!
 But remember the a places the text on the current line while p will place it on the next as if you pressed enter after the phrase.
 
-@media
+Anything 430px and below will use the style in the {}
+
+@media (max-width: 430px) {
+    .note {
+        color: rgb(255, 0, 255)
+    }
+}
 
 <html>
     <head>
