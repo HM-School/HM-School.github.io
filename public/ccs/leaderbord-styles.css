@@ -1,42 +1,174 @@
-@media (max-width: 430px) {
+body {
+    background-color: rgb(31, 31, 31);
+    color: rgb(240, 248, 255);
+}
+@media (max-width:1000px) and (min-width:360px) {
     #podium {
         position: absolute;
         top: 8em;
         left: 50%;
         margin-left: -3.5em;
+        color: black;
     }
-    #podium .first {
+    #podium div.first-place {
         position: absolute;
-        border: solid black 2px;
+        background-color: rgb(255, 217, 0);
         width: 3em;
         padding-top: 1em;
-        padding-bottom: 7em;
+        padding-bottom: 7.5em;
         padding-left: 2em;
         padding-right: 2em;
         text-align: center;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        box-shadow: 0em 0em 0.5em rgb(31, 31, 31) inset;
     }
-    #podium .second {
+    #podium div.second-place {
         position: absolute;
-        border: solid black 2px;
+        background-color: rgb(149, 174, 182);
         width: 3em;
         left: -120px;
         top: 3em;
         padding-top: 1em;
-        padding-bottom: 4em;
+        padding-bottom: 4.5em;
         padding-left: 2em;
         padding-right: 2em;
         text-align: center;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        box-shadow: 0em 0em 0.5em rgb(31, 31, 31) inset;
     }
-    #podium .third {
+    #podium div.third-place {
         position: absolute;
-        border: solid black 2px;
+        background-color: rgb(184, 95, 35);
         width: 3em;
         left: 120px;
         top: 6em;
         padding-top: 1em;
-        padding-bottom: 1em;
+        padding-bottom: 1.5em;
         padding-left: 2em;
         padding-right: 2em;
         text-align: center;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        box-shadow: 0em 0em 0.5em rgb(31, 31, 31) inset;
+    }
+    #podium div.first-place p,div.second-place p,div.third-place p {
+        font-weight: 1000;
+    }
+    #podium div div.first-place-name,div div.second-place-name,div div.third-place-name {
+        position: absolute;
+        top: -4.5em;
+        left: 1em;
+        width: 5em;
+        text-align: center;
+        color: rgb(240, 248, 255);
+    }
+    #podium div div.first-place-name {
+        text-shadow: 0em 0em 0.5em rgb(255, 217, 0);
+    }
+    #podium div div.second-place-name {
+        text-shadow: 0em 0em 0.5em rgb(149, 174, 182);
+    }
+    #podium div div.third-place-name {
+        text-shadow: 0em 0em 0.5em rgb(184, 95, 35);
+    }
+    
+    #podium-alt {
+        position: absolute;
+        top: 21em;
+        left: 50%;
+        margin-left: -10.6em;
+        width: 21em;
+        color: black;
+        border: solid red 2px;
+    }
+    #block-spacer-1 {
+        display: block;
+    }
+}
+@media (min-width:1001px) {
+    #podium {
+        position: absolute;
+        top: 8em;
+        left: 25%;
+        margin-left: -3.5em;
+        color: black;
+        font-size: 25px;
+    }
+    #podium div.first-place {
+        position: absolute;
+        background-color: rgb(255, 217, 0);
+        width: 3em;
+        padding-top: 1em;
+        padding-bottom: 10.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        box-shadow: 0em 0em 0.5em rgb(31, 31, 31) inset;
+    }
+    #podium div.second-place {
+        position: absolute;
+        background-color: rgb(149, 174, 182);
+        width: 3em;
+        left: -120px;
+        top: 4em;
+        padding-top: 1em;
+        padding-bottom: 6.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        box-shadow: 0em 0em 0.5em rgb(31, 31, 31) inset;
+    }
+    #podium div.third-place {
+        position: absolute;
+        background-color: rgb(184, 95, 35);
+        width: 3em;
+        left: 120px;
+        top: 8em;
+        padding-top: 1em;
+        padding-bottom: 2.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        box-shadow: 0em 0em 0.5em rgb(31, 31, 31) inset;
+    }
+    #podium div.first-place p,div.second-place p,div.third-place p {
+        font-weight: 1000;
+    }
+    #podium div div.first-place-name,div div.second-place-name,div div.third-place-name {
+        position: absolute;
+        top: -4.5em;
+        left: 1em;
+        width: 5em;
+        text-align: center;
+        color: rgb(240, 248, 255);
+    }
+    #podium div div.first-place-name {
+        text-shadow: 0em 0em 0.5em rgb(255, 217, 0);
+    }
+    #podium div div.second-place-name {
+        text-shadow: 0em 0em 0.5em rgb(149, 174, 182);
+    }
+    #podium div div.third-place-name {
+        text-shadow: 0em 0em 0.5em rgb(184, 95, 35);
+    }
+    
+    #podium-alt {
+        position: absolute;
+        left: 75%;
+        margin-left: -10.6em;
+        width: 21em;
+        color: black;
+        border: solid red 2px;
+    }
+    #block-spacer-1 {
+        display: none;
     }
 }
