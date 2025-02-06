@@ -62,6 +62,33 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://info-hub-schools.vercel.app/scripts/Login-Register.js"></script>
 </body>
+<script>
+function adjustFooterPosition() {
+    const pageContainer = document.getElementById("page-container");
+    const footer = document.getElementById("footert1");
+
+    if (pageContainer && footer) {
+        const viewportHeight = window.innerHeight;
+        const contentHeight = document.body.scrollHeight;
+        const footerHeight = footer.offsetHeight;
+
+        // If the content is shorter than the viewport, make sure the footer is fixed
+        if (contentHeight <= viewportHeight) {
+            footer.style.position = "fixed"; // Fix footer at bottom of the viewport
+            footer.style.bottom = "0";
+        } else {
+            footer.style.position = "relative"; // Allow footer to go to the bottom of the content
+            footer.style.bottom = ""; // Reset the bottom property
+        }
+    }
+}
+
+// Run function on load, resize, and scroll
+document.addEventListener("DOMContentLoaded", adjustFooterPosition);
+window.addEventListener("resize", adjustFooterPosition);
+window.addEventListener("scroll", adjustFooterPosition);
+
+</script>
 <footer id="footert1" class="version">
     Hosted with <a href="https://vercel.com"target="_blank" style="color: rgba(200, 200, 255, 0.75);"><b>Vercel</b></a>. &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<u></u>
 </footer>
