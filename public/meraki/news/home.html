@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p style="line-height: 16em; color: rgba(0, 0, 0, 0);">&nbsp;</p>
             </div>
         </div>
         <div id="podium-alt">
@@ -75,10 +75,10 @@ function adjustFooterPosition() {
         // If the content is shorter than the viewport, make sure the footer is fixed
         if (contentHeight <= viewportHeight) {
             footer.style.position = "fixed"; // Fix footer at bottom of the viewport
-            footer.style.bottom = "0";
+            footer.style.paddingTop = "10";
         } else {
             footer.style.position = "relative"; // Allow footer to go to the bottom of the content
-            footer.style.bottom = ""; // Reset the bottom property
+            footer.style.paddingTop = "10"; // Reset the bottom property
         }
     }
 }
