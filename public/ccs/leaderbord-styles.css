@@ -163,10 +163,10 @@ body {
     #podium-alt {
         position: absolute;
         left: 50%;
-        width: 21em;
         color: black;
         border: solid red 2px;
-        flex: 1;
+        margin-right: -13.2em;
+        right: 25%;
     }
     #block-spacer-1 {
         display: none;
