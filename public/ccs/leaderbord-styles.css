@@ -80,11 +80,26 @@ body {
         left: 50%;
         margin-left: -10.6em;
         width: 21em;
-        color: black;
-        border: solid red 2px;
+        border: solid rgb(129, 129, 129) 2px;
+        overflow: hidden;
+        font-weight: 1000;
+        border-radius: 1em;
     }
-    #block-spacer-1 {
+        
+    #podium-alt p {
+        border: solid rgb(85, 85, 85) 2px;
+        background-color: rgb(59, 59, 59);
+        margin: 0px;
+        padding: 1em;
+        vertical-align: middle;
+        text-shadow: 0em 0em 0.5em rgb(66, 144, 180);
+        color: rgb(67, 226, 75);
+    }
+    .screenSize-0 {
         display: block;
+    }
+    .screenSize-1 {
+        display: none;
     }
 }
 @media (min-width:1001px) {
@@ -159,31 +174,31 @@ body {
     #podium div div.third-place-name {
         text-shadow: 0em 0em 0.5em rgb(184, 95, 35);
     }
-    
-    #podium-alt {
+    #podium-alt-placement {
         position: absolute;
         left: 50%;
-        color: rgb(240, 248, 255);
-        font-weight: 1000;
-        border: solid rgb(129, 129, 129) 2px;
         margin-right: -13.2em;
         right: 25%;
+    }
+    #podium-alt {
         border-radius: 1em;
         overflow: hidden;
+        font-weight: 1000;
+        border: solid rgb(129, 129, 129) 2px;
     }
     #podium-alt p {
         border: solid rgb(85, 85, 85) 2px;
         background-color: rgb(59, 59, 59);
         margin: 0px;
         padding: 1em;
-        padding-right: 50%;
         vertical-align: middle;
         text-shadow: 0em 0em 0.5em rgb(66, 144, 180);
+        color: rgb(67, 226, 75);
     }
-    #podium-alt p a {
-        float: right;
-    }
-    #block-spacer-1 {
+    .screenSize-0 {
         display: none;
+    }
+    .screenSize-1 {
+        display: block;
     }
 }
