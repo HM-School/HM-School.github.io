@@ -102,7 +102,21 @@ body {
         display: none;
     }
 }
-@media (min-width:1001px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 3800px) and (min-width:1001px) {
     #podium {
         position: absolute;
         top: 8em;

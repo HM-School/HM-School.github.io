@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta http-equiv='refresh' content='10; URL=/meraki/news/home.html'>
     <title>Info Hub</title>
     <link rel="icon" href="/images/MerakiLogo.png">
     <link rel="canonical" href="/meraki/home.html">
@@ -12,6 +13,38 @@
     <link rel="stylesheet" href="/ccs/leaderbord-styles.css"/>
 </head>
 <body id="content-wrap">
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the URL
+        const url = window.location.href;
+    
+        // Target an element by ID (e.g., 'content')
+        const targetElement = document.getElementById("");
+    
+        if (targetElement) {
+            // Check query parameters (?theme=dark)
+            const params = new URLSearchParams(window.location.search);
+            if (params.get("size") === "1") {
+                targetElement.classList.add("size-1");
+            }
+    
+            // Check hash fragments (#darkmode)
+            if (window.location.hash === "#darkmode") {
+                targetElement.classList.add("dark-mode");
+            }
+    
+            // Check path segments (/dark/page)
+            const pathSegments = window.location.pathname.split("/");
+            if (pathSegments.includes("dark")) {
+                targetElement.classList.add("dark-mode");
+            }
+        }
+    });
+    </script>
+
+
+
+
     <nav class="navbar" style="z-index:100;">
         <ul>
             <li><button class="left" id="btnMenu-popup" style="padding: 0px; border: 0px;"><img class="left" src="/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></button></li>
@@ -70,7 +103,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://info-hub-schools.vercel.app/scripts/Login-Register.js"></script>
 </body>
 <script>
 function adjustFooterPosition() {
