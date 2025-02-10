@@ -295,4 +295,26 @@ body {
         color: rgb(240, 248, 255);
         text-shadow: 0em 0em 0.75em rgb(0, 0, 0);
     }
+    #topic-alt-placement {
+        position: absolute;
+        left: 50%;
+        margin-right: -13.2em;
+        right: 25%;
+        top: 15em;
+    }
+    #topic-alt {
+        border-radius: 1em;
+        overflow: hidden;
+        font-weight: 1000;
+        border: solid rgb(129, 129, 129) 2px;
+    }
+    #topic-alt p {
+        border: solid rgb(85, 85, 85) 2px;
+        background-color: rgb(59, 59, 59);
+        margin: 0px;
+        padding: 1em;
+        vertical-align: middle;
+        text-shadow: 0em 0em 0.5em rgb(66, 144, 180);
+        color: rgb(67, 226, 75);
+    }
 }
