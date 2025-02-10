@@ -101,6 +101,36 @@ body {
     .screenSize-1 {
         display: none;
     }
+    #podium div.first-place-points {
+        position: absolute;
+        top: 10em;
+    }
+    #podium div p.first-place-points {
+        font-size: 0.5em;
+        text-align: center;
+        color: rgb(240, 248, 255);
+        text-shadow: 0em 0em 0.75em rgb(0, 0, 0);
+    }
+    #podium div.second-place-points {
+        position: absolute;
+        top: 7em;
+    }
+    #podium div p.second-place-points {
+        font-size: 0.5em;
+        text-align: center;
+        color: rgb(240, 248, 255);
+        text-shadow: 0em 0em 0.75em rgb(0, 0, 0);
+    }
+    #podium div.third-place-points {
+        position: absolute;
+        top: 4em;
+    }
+    #podium div p.third-place-points {
+        font-size: 0.5em;
+        text-align: center;
+        color: rgb(240, 248, 255);
+        text-shadow: 0em 0em 0.75em rgb(0, 0, 0);
+    }
 }
 
 
@@ -214,5 +244,35 @@ body {
     }
     .screenSize-1 {
         display: block;
+    }
+    #podium div.first-place-points {
+        position: absolute;
+        top: 0.5em;
+    }
+    #podium div p.first-place-points {
+        font-size: 0.5em;
+        text-align: center;
+        color: rgb(240, 248, 255);
+        text-shadow: 0em 0em 0.75em rgb(0, 0, 0);
+    }
+    #podium div.second-place-points {
+        position: absolute;
+        top: 0.5em;
+    }
+    #podium div p.second-place-points {
+        font-size: 0.5em;
+        text-align: center;
+        color: rgb(240, 248, 255);
+        text-shadow: 0em 0em 0.75em rgb(0, 0, 0);
+    }
+    #podium div.third-place-points {
+        position: absolute;
+        top: 0.5em;
+    }
+    #podium div p.third-place-points {
+        font-size: 0.5em;
+        text-align: center;
+        color: rgb(240, 248, 255);
+        text-shadow: 0em 0em 0.75em rgb(0, 0, 0);
     }
 }

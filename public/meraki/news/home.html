@@ -15,29 +15,21 @@
 <body id="content-wrap">
     <script>
     document.addEventListener("DOMContentLoaded", function () {
-        // Get the URL
-        const url = window.location.href;
-    
-        // Target an element by ID (e.g., 'content')
-        const targetElement = document.getElementById("");
-    
-        if (targetElement) {
-            // Check query parameters (?theme=dark)
-            const params = new URLSearchParams(window.location.search);
-            if (params.get("size") === "1") {
-                targetElement.classList.add("size-1");
-            }
-    
-            // Check hash fragments (#darkmode)
-            if (window.location.hash === "#darkmode") {
-                targetElement.classList.add("dark-mode");
-            }
-    
-            // Check path segments (/dark/page)
-            const pathSegments = window.location.pathname.split("/");
-            if (pathSegments.includes("dark")) {
-                targetElement.classList.add("dark-mode");
-            }
+        const targetElement = document.getElementById("yourElementID"); // Replace with your actual element ID
+        if (!targetElement) return; // Stop if element doesn't exist
+
+        // Get URL parameters and hash
+        const urlParams = new URLSearchParams(window.location.search);
+        const hash = window.location.hash; // Example: "#darkmode"
+
+        // Apply styles based on query parameters
+        urlParams.forEach((value, key) => {
+            targetElement.classList.add(`${key}-${value}`); // Adds classes like "theme-dark"
+        });
+
+        // Apply styles based on hash fragments
+        if (hash) {
+            targetElement.classList.add(hash.substring(1)); // Removes "#" and adds class
         }
     });
     </script>
@@ -52,17 +44,17 @@
         </ul>
     </nav>
 
-    <main>
-        <div id="podium-alt-placement">
+    <main id="pageSize-1">
+        <div id="podium-alt-placement" class="">
             <div id="podium-alt">
                 <p style="border-top-right-radius: 0.9em; border-top-left-radius: 0.9em;">
-                    4th:&nbsp;&nbsp;&nbsp;<a style="color: rgb(240, 248, 255);">District 1</a>
+                    4th:&nbsp;&nbsp;&nbsp;<a style="color: rgb(240, 248, 255);">District 1</a><a style="color: rgb(240, 248, 255); float: right;">311 Points</a>
                 </p>
                 <p>
-                    5th:&nbsp;&nbsp;&nbsp;<a style="color: rgb(240, 248, 255);">District 4</a>
+                    5th:&nbsp;&nbsp;&nbsp;<a style="color: rgb(240, 248, 255);">District 4</a><a style="color: rgb(240, 248, 255); float: right;">280 Points</a>
                 </p>
                 <p style="border-bottom-right-radius: 0.9em; border-bottom-left-radius: 0.9em;">
-                    6th:&nbsp;&nbsp;&nbsp;<a style="color: rgb(240, 248, 255);">District 5</a>
+                    6th:&nbsp;&nbsp;&nbsp;<a style="color: rgb(240, 248, 255);">District 5</a><a style="color: rgb(240, 248, 255); float: right;">275 Points</a>
                 </p>
             </div>
             <div class="screenSize-0">
@@ -75,21 +67,27 @@
         <div id="podium">
             <div class="first-place">
                 <p class="first-place">1st</p>
-
+                <div class="first-place-points">
+                    <p class="first-place-points">340 Points</p>
+                </div>
                 <div class="first-place-name">
                     <p style="font-weight: 1000;">District 6</p>
                 </div>
             </div>
             <div class="second-place">
                 <p class="second-place">2nd</p>
-
+                <div class="second-place-points">
+                    <p class="second-place-points">320 Points</p>
+                </div>
                 <div class="second-place-name">
                     <p style="font-weight: 1000;">District 2</p>
                 </div>
             </div>
             <div class="third-place">
                 <p class="third-place">3rd</p>
-
+                <div class="third-place-points">
+                    <p class="third-place-points">315 Points</p>
+                </div>
                 <div class="third-place-name">
                     <p style="font-weight: 1000;">District 3</p>
                 </div>
