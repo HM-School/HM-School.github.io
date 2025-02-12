@@ -15,23 +15,25 @@
 <body id="content-wrap">
     <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const targetElement = document.getElementById("yourElementID"); // Replace with your actual element ID
+        const targetElement = document.getElementById("pageSize-1");
         if (!targetElement) return; // Stop if element doesn't exist
 
-        // Get URL parameters and hash
+        // Define the allowed classes
+        const allowedClasses = {
+            size: ["1"]
+        };
+
+        // Get URL parameters
         const urlParams = new URLSearchParams(window.location.search);
-        const hash = window.location.hash; // Example: "#darkmode"
 
-        // Apply styles based on query parameters
+        // Apply styles based on allowed query parameters
         urlParams.forEach((value, key) => {
-            targetElement.classList.add(`${key}-${value}`); // Adds classes like "theme-dark"
+            if (allowedClasses[key] && allowedClasses[key].includes(value)) {
+                targetElement.classList.add(`${key}-${value}`); // Adds class "size-1"
+            }
         });
-
-        // Apply styles based on hash fragments
-        if (hash) {
-            targetElement.classList.add(hash.substring(1)); // Removes "#" and adds class
-        }
     });
+
     </script>
 
 
