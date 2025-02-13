@@ -116,25 +116,32 @@
             <!--Topic Start-->
 
             <!--District Meetings Start-->
-            <h1 style="text-align: center; display: none;">District Meetings</h1>
-            <div id="dm-alt" style="display: none;">
-                <p style="border-top-right-radius: 0.9em; border-top-left-radius: 0.9em;">
-                    District 1: <a style="color: rgb(240, 248, 255);">Purple Space In Front Of Scots Desk</a>
-                </p>
-                <p>
-                    District 2: <a style="color: rgb(240, 248, 255);">Campfire</a>
-                </p>
-                <p>
-                    District 3: <a style="color: rgb(240, 248, 255);">Green Space</a>
-                </p>
-                <p>
-                    District 4: <a style="color: rgb(240, 248, 255);">Hub</a>
-                </p>
-                <p>
-                    District 5: <a style="color: rgb(240, 248, 255);">Purple Space Tables Under Vent</a>
-                </p>
-                <p style="border-bottom-right-radius: 0.9em; border-bottom-left-radius: 0.9em;">
-                    District 6: <a style="color: rgb(240, 248, 255);">Red Space</a>
+            <div id="dm-alt">
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Feb 13, 2025 9:00:00").getTime();
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+                      // Get today's date and time
+                      var now = new Date().getTime();
+                      // Find the distance between now and the count down date
+                      var distance = countDownDate - now;
+                      // Time calculations for days, hours, minutes and seconds
+                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                      // Output the result in an element with id="countdownTime"
+                      document.getElementById("countdownTime").innerHTML = minutes + "m " + seconds + "s ";
+                      // If the count down is over, write some text 
+                      if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("countdownTime").innerHTML = "Advisory Has Started";
+                      }
+                    }, 1000);
+                    </script>
+                <p style="border-top-right-radius: 0.9em; border-top-left-radius: 0.9em;   border-bottom-right-radius: 0.9em; border-bottom-left-radius: 0.9em;">
+                    Advisory Starts in: <a id="countdownTime" style="color: rgb(240, 248, 255);"></a>
                 </p>
             </div>
             <div class="screenSize-0" style="display: none;">
@@ -147,7 +154,6 @@
         </div>
         <!--Text Boxes End-->
     </main>
-
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
