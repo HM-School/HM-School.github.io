@@ -84,6 +84,7 @@ body {
         overflow: hidden;
         font-weight: 1000;
         border-radius: 1em;
+        margin-bottom: 1em;
     }
         
     #podium-alt p {
@@ -140,6 +141,7 @@ body {
         overflow: hidden;
         font-weight: 1000;
         border-radius: 1em;
+        margin-bottom: 1em;
     }
         
     #topic-alt p {
@@ -160,6 +162,7 @@ body {
         overflow: hidden;
         font-weight: 1000;
         border-radius: 1em;
+        margin-bottom: 1em;
     }
     #dm-alt p {
         border: solid rgb(85, 85, 85) 2px;
@@ -283,6 +286,7 @@ body {
         overflow: hidden;
         font-weight: 1000;
         border: solid rgb(129, 129, 129) 2px;
+        margin-bottom: 1em;
     }
     #podium-alt p {
         border: solid rgb(85, 85, 85) 2px;
@@ -334,6 +338,7 @@ body {
         overflow: hidden;
         font-weight: 1000;
         border: solid rgb(129, 129, 129) 2px;
+        margin-bottom: 1em;
     }
     #topic-alt p {
         border: solid rgb(85, 85, 85) 2px;
@@ -349,6 +354,7 @@ body {
         overflow: hidden;
         font-weight: 1000;
         border: solid rgb(129, 129, 129) 2px;
+        margin-bottom: 1em;
     }
     #dm-alt p {
         border: solid rgb(85, 85, 85) 2px;
