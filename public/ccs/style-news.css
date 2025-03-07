@@ -2,6 +2,7 @@ body{
   margin: 0px;
   padding: 0px;
   /*background: url(/images/Abovetheclouds.png) no-repeat;*/
+  background-color: #353535;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
