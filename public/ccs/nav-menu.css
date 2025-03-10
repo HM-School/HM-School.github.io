@@ -1,6 +1,6 @@
 .nav-wrapper {
     display: none;
 }
-.nav-wrapper-active {
+.nav-wrapper.active {
     display: block;
 }
