@@ -95,6 +95,6 @@
   }
   .navbar p:hover.indicate{
     cursor: pointer;
-    background-color: rgba(56, 56, 56, 0.95);
+    background-color: rgba(97, 97, 97, 0.95);
     scale: 1.05;
     }
