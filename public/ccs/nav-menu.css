@@ -5,7 +5,7 @@
       border: 2px solid rgba(59, 59, 59, 0.25);
       border-top-right-radius: 25px;
       border-bottom-right-radius: 25px;
-      position: sticky;
+      position: absolute;
       width: 12em;
       height: fit-content;
   }
