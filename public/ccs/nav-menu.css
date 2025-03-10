@@ -9,6 +9,18 @@
       width: 12em;
       height: fit-content;
   }
+  .nav-wrapper p.st1 {
+    margin: 0.5em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    border: 2px solid rgba(59, 59, 59, 0.25);
+    border-radius: 100px;
+  }
+  .nav-wrapper p.st1 a {
+    height:1em;
+    margin:0em;
+    padding:0em;
+  }
   .nav-wrapper.active {
       display: block;
   }
