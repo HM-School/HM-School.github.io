@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="/ccs/fontslist.css"/>
     <link rel="stylesheet" href="/ccs/leaderbord-styles.css"/>
     <link rel="stylesheet" href="/ccs/nav-menu.css"/>
-    <script scr="/scripts/nav-menu.js"></script>
 </head>
 <body id="content-wrap">
     <nav class="navbar" style="z-index:100;">
@@ -59,6 +58,30 @@ function adjustFooterPosition() {
 document.addEventListener("DOMContentLoaded", adjustFooterPosition);
 window.addEventListener("resize", adjustFooterPosition);
 window.addEventListener("scroll", adjustFooterPosition);
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const navMenu = document.querySelector(".nav-menu");
+    const navWrapper = document.querySelector(".nav-wrapper");
+
+    if (navMenu && navWrapper) {
+        navMenu.addEventListener("mouseover", function () {
+            console.log("Hovered over nav-menu");
+            navWrapper.classList.add("active");
+        });
+
+        navMenu.addEventListener("mouseout", function (event) {
+            console.log("Mouse left nav-menu or child");
+            if (!navMenu.contains(event.relatedTarget)) {
+                console.log("Removed active class");
+                navWrapper.classList.remove("active");
+            }
+        });
+    } else {
+        console.error("nav-menu or nav-wrapper not found in the DOM");
+    }
+});
 
 </script>
 <footer id="footert1" class="version">
