@@ -4,13 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (navMenu && navWrapper) {
         navMenu.addEventListener("mouseover", function () {
+            console.log("Hovered over nav-menu");
             navWrapper.classList.add("nav-wrapper-active");
         });
 
         navMenu.addEventListener("mouseout", function (event) {
+            console.log("Mouse left nav-menu or child");
             if (!navMenu.contains(event.relatedTarget)) {
+                console.log("Removed active class");
                 navWrapper.classList.remove("nav-wrapper-active");
             }
         });
+    } else {
+        console.error("nav-menu or nav-wrapper not found in the DOM");
     }
 });
