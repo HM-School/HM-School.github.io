@@ -1,10 +1,10 @@
-.nav-wrapper {
-    display: none;
-}
-.nav-wrapper.active {
-    display: block;
-}
-.navbar {
+  .nav-wrapper {
+      display: none;
+  }
+  .nav-wrapper.active {
+      display: block;
+  }
+  .navbar {
     position: sticky;
     top: 0;
   }
@@ -14,7 +14,16 @@
     margin: 0px;
     overflow: hidden;
   }
-  .navbar a{
+  .navbar a.indicate{
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+  .navbar p.indicate{
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
     padding: 15px;
