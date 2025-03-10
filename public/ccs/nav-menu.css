@@ -1,5 +1,13 @@
   .nav-wrapper {
       display: none;
+      transform: translateY(-3px);
+      background-color: rgb(62, 62, 62, 0.5);
+      border: 2px solid rgba(59, 59, 59, 0.25);
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      position: sticky;
+      width: 12em;
+      height: fit-content;
   }
   .nav-wrapper.active {
       display: block;
