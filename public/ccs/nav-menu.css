@@ -55,3 +55,8 @@
   background-color: rgba(56, 56, 56, 0.5);
   scale: 1.1;
   }
+  .navbar p:hover{
+    cursor: pointer;
+    background-color: rgba(56, 56, 56, 0.5);
+    scale: 1.1;
+    }
