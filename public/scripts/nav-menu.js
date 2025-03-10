@@ -1,12 +1,14 @@
-const nav_wrapper = document.querySelector('.nav-wrapper');
-const navmenu = document.querySelector('.nav-menu');
+document.addEventListener("DOMContentLoaded", function () {
+    const navMenu = document.querySelector(".nav-menu");
+    const navWrapper = document.querySelector(".nav-wrapper");
 
+    if (navMenu && navWrapper) {
+        navMenu.addEventListener("mouseenter", function () {
+            navWrapper.classList.add("nav-wrapper-active");
+        });
 
-
-navmenu.addEventListener('click', () => {
-    nav_wrapper.classList.add('active');
-});
-
-navmenu.addEventListener('click', () => {
-    nav_wrapper.classList.remove('active');
+        navMenu.addEventListener("mouseleave", function () {
+            navWrapper.classList.remove("nav-wrapper-active");
+        });
+    }
 });
