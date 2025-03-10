@@ -4,3 +4,54 @@
 .nav-wrapper.active {
     display: block;
 }
+.navbar {
+    position: sticky;
+    top: 0;
+  }
+  .navbar ul{
+    list-style-type: none;
+    padding: 5px;
+    margin: 0px;
+    overflow: hidden;
+  }
+  .navbar a{
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+  .navbar button{
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  padding: 14px;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+  transition: 0.5s;
+  }
+  .navbar li .left{
+    float: left;
+    background-color: rgba(59, 59, 59, 0.25);
+    border: 2px solid rgba(59, 59, 59, 0.25);
+    border-radius: 5px;
+  }
+  .navbar li .right{
+  float: right;
+  background-color: rgba(59, 59, 59, 0.25);
+  border: 2px solid rgba(59, 59, 59, 0.25);
+  border-radius: 5px;
+  }
+  .navbar button:hover{
+    cursor: pointer;
+    background-color: rgba(56, 56, 56, 0.5);
+    scale: 1.1;
+    }
+  .navbar a:hover{
+  cursor: pointer;
+  background-color: rgba(56, 56, 56, 0.5);
+  scale: 1.1;
+  }

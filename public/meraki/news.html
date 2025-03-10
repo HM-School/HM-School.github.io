@@ -8,9 +8,8 @@
     <link rel="icon" href="/images/MerakiLogo.png">
     <link rel="canonical" href="/meraki/home.html">
     <link rel="stylesheet" href="/ccs/footer.css"/>
-    <link rel="stylesheet" href="/ccs/style-news.css"/>
+    <!--<link rel="stylesheet" href="/ccs/style-news.css"/>-->
     <link rel="stylesheet" href="/ccs/fontslist.css"/>
-    <link rel="stylesheet" href="/ccs/leaderbord-styles.css"/>
     <link rel="stylesheet" href="/ccs/nav-menu.css"/>
 </head>
 <body id="content-wrap">
@@ -23,7 +22,7 @@
             <li><a class="right" href="/meraki/login.html">Login</a></li>
         </ul>
     </nav>
-
+    <script src="/scripts/nav-menu.js"></script>
     <main>
         <div>
             <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&mode=AGENDA&showTabs=0&showNav=0&showTitle=0&showCalendars=0&showDate=0&src=Y19jbGFzc3Jvb21hMWU2YzE5NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237627bb" style="border-width:0" width="800" height="500" frameborder="0" scrolling="no"></iframe>
@@ -60,30 +59,7 @@ window.addEventListener("resize", adjustFooterPosition);
 window.addEventListener("scroll", adjustFooterPosition);
 
 </script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const navMenu = document.querySelector(".nav-menu");
-    const navWrapper = document.querySelector(".nav-wrapper");
 
-    if (navMenu && navWrapper) {
-        navMenu.addEventListener("mouseover", function () {
-            console.log("Hovered over nav-menu");
-            navWrapper.classList.add("active");
-        });
-
-        navMenu.addEventListener("mouseout", function (event) {
-            console.log("Mouse left nav-menu or child");
-            if (!navMenu.contains(event.relatedTarget)) {
-                console.log("Removed active class");
-                navWrapper.classList.remove("active");
-            }
-        });
-    } else {
-        console.error("nav-menu or nav-wrapper not found in the DOM");
-    }
-});
-
-</script>
 <footer id="footert1" class="version">
     <a href="https://vercel.com"target="_blank" style="color: rgba(200, 200, 255, 0.75);"><b>merakiinfohub.vercel.app</b></a> &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<u></u>
 </footer>
