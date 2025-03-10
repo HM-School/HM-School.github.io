@@ -11,30 +11,9 @@
     <link rel="stylesheet" href="/ccs/style-news.css"/>
     <link rel="stylesheet" href="/ccs/fontslist.css"/>
     <link rel="stylesheet" href="/ccs/leaderbord-styles.css"/>
+    <script>document.addEventListener("DOMContentLoaded", function () {const targetElement = document.getElementById("pageSize-1");if (!targetElement) return;const allowedClasses = {size: ["1"]};const urlParams = new URLSearchParams(window.location.search);urlParams.forEach((value, key) => {if (allowedClasses[key] && allowedClasses[key].includes(value)) {targetElement.classList.add(`${key}-${value}`);}});});</script>
 </head>
 <body id="content-wrap">
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const targetElement = document.getElementById("pageSize-1");
-        if (!targetElement) return; // Stop if element doesn't exist
-
-        // Define the allowed classes
-        const allowedClasses = {
-            size: ["1"]
-        };
-
-        // Get URL parameters
-        const urlParams = new URLSearchParams(window.location.search);
-
-        // Apply styles based on allowed query parameters
-        urlParams.forEach((value, key) => {
-            if (allowedClasses[key] && allowedClasses[key].includes(value)) {
-                targetElement.classList.add(`${key}-${value}`); // Adds class "size-1"
-            }
-        });
-    });
-
-    </script>
     <nav class="navbar" style="z-index:100;">
         <ul>
             <li class="nav-menu"><button class="left" id="btnMenu-popup" style="padding: 0px; border: 0px;"><img class="left" src="/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></button></li>
