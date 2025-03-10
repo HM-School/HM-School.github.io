@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (navMenu && navWrapper) {
         navMenu.addEventListener("mouseover", function () {
             console.log("Hovered over nav-menu");
-            navWrapper.classList.add("nav-wrapper-active");
+            navWrapper.classList.add("active");
         });
 
         navMenu.addEventListener("mouseout", function (event) {
             console.log("Mouse left nav-menu or child");
             if (!navMenu.contains(event.relatedTarget)) {
                 console.log("Removed active class");
-                navWrapper.classList.remove("nav-wrapper-active");
+                navWrapper.classList.remove("active");
             }
         });
     } else {
