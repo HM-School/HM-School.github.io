@@ -7,15 +7,17 @@ body{
   background-attachment: fixed;
   box-sizing:border-box;
   font-family: 'Poppins', sans-serif;
+  background-color: rgb(20, 20, 20);
   /* overflow-y: hidden; */  /* Hide vertical scrollbar */
   /* overflow-x: hidden; */  /* Hide horizontal scrollbar */
 }
+
 main{
   padding-bottom: 1em;
   height: calc(100vh - 79px - 60px);
+  background-color: white;
   /*color: rgb(199, 202, 204);*/
 }
-
 
 .content {
     width: 9.5%;
