@@ -8,39 +8,25 @@
     <link rel="icon" href="/images/MerakiLogo.png">
     <link rel="canonical" href="/meraki/home.html">
     <link rel="stylesheet" href="/ccs/footer.css"/>
-    <link rel="stylesheet" href="/ccs/style-singularity.css"/>
+    <link rel="stylesheet" href="/ccs/style-news.css"/>
     <link rel="stylesheet" href="/ccs/fontslist.css"/>
     <link rel="stylesheet" href="/ccs/leaderbord-styles.css"/>
+    <link rel="stylesheet" href="/ccs/nav-menu.css"/>
+    <script>document.addEventListener("DOMContentLoaded", function () {const targetElement = document.getElementById("pageSize-1");if (!targetElement) return;const allowedClasses = {size: ["1"]};const urlParams = new URLSearchParams(window.location.search);urlParams.forEach((value, key) => {if (allowedClasses[key] && allowedClasses[key].includes(value)) {targetElement.classList.add(`${key}-${value}`);}});});</script>
 </head>
 <body id="content-wrap">
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const targetElement = document.getElementById("pageSize-1");
-        if (!targetElement) return; // Stop if element doesn't exist
-
-        // Define the allowed classes
-        const allowedClasses = {
-            size: ["1"]
-        };
-
-        // Get URL parameters
-        const urlParams = new URLSearchParams(window.location.search);
-
-        // Apply styles based on allowed query parameters
-        urlParams.forEach((value, key) => {
-            if (allowedClasses[key] && allowedClasses[key].includes(value)) {
-                targetElement.classList.add(`${key}-${value}`); // Adds class "size-1"
-            }
-        });
-    });
-
-    </script>
     <nav class="navbar" style="z-index:100;">
         <ul>
-            <li><button class="left" id="btnMenu-popup" style="padding: 0px; border: 0px;"><img class="left" src="/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></button></li>
-            <li><a class="right" href="/meraki/login.html">Login</a></li>
+            <li class="nav-menu"><button class="left" id="btnMenu-popup" style="padding: 0px; border: 0px;"><img class="left" src="/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></button></li>
+            <li><a class="right indicate" href="/meraki/login.html">Login</a></li>
+        </ul>
+        <ul class="nav-wrapper">
+            <p class="indicate st1"><a href="/meraki/news.html">News</a></p>
+            <p class="indicate st1"><a href="/meraki/news/winter-fire-n-ice-ball-2025.html">Winter Ball Flier</a></p>
+            <p class="indicate st1"><a href="/meraki/news/singularity-leader-board.html">Singularity</a></p>
         </ul>
     </nav>
+    <script src="/scripts/nav-menu.js"></script>
 
     <main id="pageSize-1">
         <!--Top 3 Start-->

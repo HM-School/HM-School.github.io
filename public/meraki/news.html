@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" id="page-container">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--<meta http-equiv='refresh' content='10; URL=/meraki/news/home.html'>-->
+    <title>Info Hub</title>
+    <link rel="icon" href="/images/MerakiLogo.png">
+    <link rel="canonical" href="/meraki/home.html">
+    <link rel="stylesheet" href="/ccs/footer.css"/>
+    <link rel="stylesheet" href="/ccs/style-news.css"/>
+    <link rel="stylesheet" href="/ccs/fontslist.css"/>
+    <link rel="stylesheet" href="/ccs/nav-menu.css"/>
+</head>
+<body id="content-wrap">
+    <nav class="navbar" style="z-index:100;">
+        <ul>
+            <li class="nav-menu"><button class="left" id="btnMenu-popup" style="padding: 0px; border: 0px;"><img class="left" src="/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></button></li>
+            <li><a class="right indicate" href="/meraki/login.html">Login</a></li>
+        </ul>
+        <ul class="nav-wrapper">
+            <p class="indicate st1"><a href="/meraki/news.html">News</a></p>
+            <p class="indicate st1"><a href="/meraki/news/winter-fire-n-ice-ball-2025.html">Winter Ball Flier</a></p>
+            <p class="indicate st1"><a href="/meraki/news/singularity-leader-board.html">Singularity</a></p>
+        </ul>
+    </nav><script src="/scripts/nav-menu.js"></script>
+    
+    <main>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<script>
+function adjustFooterPosition() {
+    const pageContainer = document.getElementById("page-container");
+    const footer = document.getElementById("footert1");
+
+    if (pageContainer && footer) {
+        const viewportHeight = window.innerHeight;
+        const contentHeight = document.body.scrollHeight;
+        const footerHeight = footer.offsetHeight;
+
+        // If the content is shorter than the viewport, make sure the footer is fixed
+        if (contentHeight <= viewportHeight) {
+            footer.style.position = "fixed"; // Fix footer at bottom of the viewport
+            footer.style.paddingTop = "10";
+        } else {
+            footer.style.position = "relative"; // Allow footer to go to the bottom of the content
+            footer.style.paddingTop = "10"; // Reset the bottom property
+        }
+    }
+}
+
+// Run function on load, resize, and scroll
+document.addEventListener("DOMContentLoaded", adjustFooterPosition);
+window.addEventListener("resize", adjustFooterPosition);
+window.addEventListener("scroll", adjustFooterPosition);
+
+</script>
+
+<footer id="footert1" class="version">
+    <a href="https://vercel.com"target="_blank" style="color: rgba(200, 200, 255, 0.75);"><b>merakiinfohub.vercel.app</b></a> &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<u></u>
+</footer>
+</html>

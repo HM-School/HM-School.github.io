@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" id="page-container">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Info Hub</title>
+    <link rel="icon" href="/images/MerakiLogo.png">
+    <link rel="canonical" href="/meraki/home.html">
+    <link rel="stylesheet" href="/ccs/footer.css"/>
+    <link rel="stylesheet" href="/ccs/style-login.css"/>
+    <link rel="stylesheet" href="/ccs/nav-menu.css"/>
+</head>
+<body id="content-wrap">
+    <nav class="navbar" style="z-index:100;">
+        <ul>
+            <li class="nav-menu"><button class="left" id="btnMenu-popup" style="padding: 0px; border: 0px;"><img class="left" src="/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></button></li>
+            <li><a class="right indicate" href="/meraki/login.html">Login</a></li>
+        </ul>
+        <ul class="nav-wrapper">
+            <p class="indicate st1"><a href="/meraki/news.html">News</a></p>
+            <p class="indicate st1"><a href="/meraki/news/winter-fire-n-ice-ball-2025.html">Winter Ball Flier</a></p>
+            <p class="indicate st1"><a href="/meraki/news/singularity-leader-board.html">Singularity</a></p>
+        </ul>
+    </nav>
+    <script src="/scripts/nav-menu.js"></script>
+
+    <main>
+        <div class="wrapper" style="margin: auto;margin-top: 10px;position: fixed;z-index: 5;transform: translate(calc(50vw - 167.5px), 0px);border: 2px solid black;border-radius: 25px;padding: 30px;">
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#" onsubmit="return false;">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail" role="img" class="md hydrated"></ion-icon></span>
+                        <input id="email" name="email" type="email" autocomplete="on" required="">
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed" role="img" class="md hydrated"></ion-icon></span>
+                        <input name="password" id="password" type="password" autocomplete="current-password" required="">
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://info-hub-schools.vercel.app/scripts/Login-Register.js"></script>
+</body>
+<footer id="footert1" class="version">
+    <a href="https://vercel.com"target="_blank" style="color: rgba(200, 200, 255, 0.75);"><b>merakiinfohub.vercel.app</b></a> &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<u></u>
+</footer>
+</html>
