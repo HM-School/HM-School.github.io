@@ -23,7 +23,7 @@ main{
     width: 9.5%;
     min-height: 636px;
     border: 2px solid #6d6d6d;
-    background-color: #353535;
+    background-color: #FFFFFF; /* 353535;*/
     display: flex;
   }
   
