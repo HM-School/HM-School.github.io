@@ -20,6 +20,11 @@ main{
 }
 
 .content {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 9.5%;
     min-height: 636px;
     border: 4px solid teal;
