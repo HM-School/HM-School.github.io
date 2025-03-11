@@ -1,62 +1,97 @@
 <!DOCTYPE html>
-<html lang="en" id="page-container">
+<html lang="en" id="page-container"></html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--<meta http-equiv='refresh' content='10; URL=/meraki/news/home.html'>-->
     <title>Info Hub</title>
     <link rel="icon" href="/images/MerakiLogo.png">
-    <link rel="canonical" href="/meraki/home.html">
-    <link rel="stylesheet" href="/ccs/footer.css"/>
-    <link rel="stylesheet" href="/ccs/style-news.css"/>
-    <link rel="stylesheet" href="/ccs/fontslist.css"/>
-    <link rel="stylesheet" href="/ccs/leaderbord-styles.css"/>
+    <link rel="canonical" href="/meraki-archive/home.html">
+    <link rel="stylesheet" href="/ccs/footer-1-archived.css"/>
+    <link rel="stylesheet" href="/ccs/style-1-archived.css"/>
+    <link rel="stylesheet" href="/ccs/Login.css"/>
 </head>
+
 <body id="content-wrap">
     <nav class="navbar" style="z-index:100;">
         <ul>
-            <li><button class="left" id="btnMenu-popup" style="padding: 0px; border: 0px;"><img class="left" src="/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></button></li>
-            <li><a class="right" href="/meraki/login.html">Login</a></li>
+            <li><img class="right" src="/images/MerakiLogo.png" width="auto" height="49px" alt="MerakiLogo"></li>
+            <li><button class="right" id="btnLogin-popup">Login</a></li>
+            <li><a class="left" href="/meraki-archive/home.html">Home</a></li>
+            <li><a class="left" href="/meraki-archive/news/home.html">News</a></li>
+            <li><a class="left" href="/meraki-archive/store/home.html">Store</a></li>
         </ul>
     </nav>
 
-    <main>
-        <div>
-            <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&mode=AGENDA&showTabs=0&showNav=0&showTitle=0&showCalendars=0&showDate=0&src=Y19jbGFzc3Jvb21hMWU2YzE5NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237627bb" style="border-width:0" width="800" height="500" frameborder="0" scrolling="no"></iframe>
+    <div class="wrapper" style="margin: auto; margin-top: 10px; margin-left:50%; position: absolute; left:-200px; z-index: 5;">
+        <span class="icon-close" style="z-index:101;">
+        <ion-icon name="close-circle-outline"></ion-icon>
+    </span>
+        <div class="form-box login">
+            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Login</h2>
+            <form action="#" onsubmit="return false;">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
         </div>
-    </main>
 
+        <div class="form-box register">
+            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Registration</h2>
+            <form action="#" onsubmit="return false;">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="conditions-link">
+                    <label><input type="checkbox" required>I agree to the terms & <a href="#">conditions</a></label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <main style="z-index:1;">
+        <!--
+            Main Body
+        -->
+
+        <h1 style="text-align: center;">News</h1>
+
+    </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://info-hub-schools.vercel.app/scripts/Login-Register.js"></script>
 </body>
-<script>
-function adjustFooterPosition() {
-    const pageContainer = document.getElementById("page-container");
-    const footer = document.getElementById("footert1");
-
-    if (pageContainer && footer) {
-        const viewportHeight = window.innerHeight;
-        const contentHeight = document.body.scrollHeight;
-        const footerHeight = footer.offsetHeight;
-
-        // If the content is shorter than the viewport, make sure the footer is fixed
-        if (contentHeight <= viewportHeight) {
-            footer.style.position = "fixed"; // Fix footer at bottom of the viewport
-            footer.style.paddingTop = "10";
-        } else {
-            footer.style.position = "relative"; // Allow footer to go to the bottom of the content
-            footer.style.paddingTop = "10"; // Reset the bottom property
-        }
-    }
-}
-
-// Run function on load, resize, and scroll
-document.addEventListener("DOMContentLoaded", adjustFooterPosition);
-window.addEventListener("resize", adjustFooterPosition);
-window.addEventListener("scroll", adjustFooterPosition);
-
-</script>
 <footer id="footert1" class="version">
-    <a href="https://vercel.com"target="_blank" style="color: rgba(200, 200, 255, 0.75);"><b>merakiinfohub.vercel.app</b></a> &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<u></u>
-</footer>
+    Hosted with <a href="https://vercel.com"target="_blank" style="color: rgba(200, 200, 255, 0.75);"><b>Vercel</b></a>. &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<u></u>
+    </footer>
 </html>
