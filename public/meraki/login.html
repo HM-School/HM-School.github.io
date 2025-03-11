@@ -25,31 +25,33 @@
     <script src="/scripts/nav-menu.js"></script>
 
     <main>
-        <div  style="float: right; padding-left: 10px; padding-right: 10px; width:46%; margin: -20px; margin-left: 20px; height: 100%;">
-            <form action="/meraki/process-form.php" method="post">
-                <label for="nameInput">Name:</label><br>
-                <input type="text" id="nameInput" name="name" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em; width: 200px; height: 2em; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1); box-shadow: 0px 0px 3px inset;">
-                <br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" style="margin-top: 0.5em; padding-left: 0.5em; padding-right: 0.5em;padding-top: 0.5em; width: 200px; height: 2em; resize: none; color: rgb(0, 0, 0); border-radius: 5px; background-color: rgb(207, 237, 255); border: 0px solid rgba(223, 223, 223, 1); overflow-y: hidden; box-shadow: 0px 0px 3px inset;"></textarea>
-                <br><br>
-                <label for="priority">Priority:</label>
-                <select id="priority" name="priorityLvl">
-                    <option value="0" selected>Low</option>
-                    <option value="1">Medium</option>
-                    <option value="2">High</option>
-                </select>
-                <br><br>
-                <!--if you nest the input inside of the label you dont need to use the for property-->
-                <!--if you use an input type of radio you can make them into a group by using name="group-name"-->
-                <!--only inputs with a name attribute will be submitted to the php-->
-                <label>
-                    <input type="checkbox" name="tos" value="true" required>
-                    I agree to the terms of use.
-                </label>
-                <br><br>
-                <button style=" box-shadow: 0px 0px 5px inset; border-radius: 5px;">Send</button>
-            </form>
+        <div class="wrapper" style="margin: auto;margin-top: 10px;position: fixed;z-index: 5;transform: translate(calc(50vw - 167.5px), 0px);border: 2px solid black;border-radius: 25px;padding: 30px;">
+            <span class="icon-close" style="z-index:101; width:2em; height:2em; display:block; position:fixed;">
+            <ion-icon name="close-circle-outline" role="img" class="md hydrated"></ion-icon>
+        </span>
+            <div class="form-box login">
+                <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Login</h2>
+                <form action="#" onsubmit="return false;">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail" role="img" class="md hydrated"></ion-icon></span>
+                        <input id="email" name="email" type="email" autocomplete="on" required="">
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed" role="img" class="md hydrated"></ion-icon></span>
+                        <input name="password" id="password" type="password" autocomplete="current-password" required="">
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 
