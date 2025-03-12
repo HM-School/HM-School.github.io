@@ -7,7 +7,7 @@ body{
   background-attachment: fixed;
   box-sizing:border-box;
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(20, 20, 20);
+  /* background-color: rgb(20, 20, 20); */ /* The main and body should use the same background. This is so that we can impliment new features more easily down the road such as site themes and custom backgrounds. Wether this feature will be added or not has yet to be determined and the footer and header should fit seemlessly with the rest of the page so having more than one background color could cause issues. When you apply a background color please do so within the div elements for the content block you are making. */
   /* overflow-y: hidden; */  /* Hide vertical scrollbar */
   /* overflow-x: hidden; */  /* Hide horizontal scrollbar */
 }
@@ -15,7 +15,6 @@ body{
 main{
   padding-bottom: 1em;
   height: calc(100vh - 79px - 60px);
-  background-color: rgb(255, 255, 255);
   /*color: rgb(199, 202, 204);*/
 }
 
