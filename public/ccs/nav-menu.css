@@ -2,7 +2,7 @@
       display: none;
       transform: translateY(-3px);
       background-color: rgba(107, 107, 107, 0.8);
-      border: 2px solid rgba(59, 59, 59, 0.25);
+      border: 2px solid rgba(59, 59, 59, 0.45);
       border-top-right-radius: 25px;
       border-bottom-right-radius: 25px;
       position: absolute;
@@ -13,7 +13,7 @@
     margin: 0.5em;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
-    border: 2px solid rgba(59, 59, 59, 0.25);
+    border: 2px solid rgba(59, 59, 59, 0.45);
     border-radius: 100px;
     background-color: rgba(107, 107, 107, 0.95);;
   }
@@ -73,19 +73,19 @@
   }
   .navbar li .left{
     float: left;
-    background-color: rgba(59, 59, 59, 0.25);
-    border: 2px solid rgba(59, 59, 59, 0.25);
+    background-color: rgba(59, 59, 59, 0.45);
+    border: 2px solid rgba(59, 59, 59, 0.45);
     border-radius: 5px;
   }
   .navbar li .right{
   float: right;
-  background-color: rgba(59, 59, 59, 0.25);
-  border: 2px solid rgba(59, 59, 59, 0.25);
+  background-color: rgba(59, 59, 59, 0.45);
+  border: 2px solid rgba(59, 59, 59, 0.45);
   border-radius: 5px;
   }
   .navbar button:hover{
     cursor: pointer;
-    background-color: rgba(56, 56, 56, 0.5);
+    background-color: rgba(56, 56, 56, 0.95);
     scale: 1.1;
     }
   .navbar a:hover.indicate{
