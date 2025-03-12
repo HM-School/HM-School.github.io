@@ -8,7 +8,7 @@ body{
   box-sizing:border-box;
   font-family: 'Poppins', sans-serif;
   /* overflow-y: hidden; */  /* Hide vertical scrollbar */
-  /* overflow-x: hidden; */  /* Hide horizontal scrollbar */
+  overflow-x: hidden;  /* Hide horizontal scrollbar */
 }
 main{
   padding-bottom: 1em;
