@@ -50,6 +50,9 @@ body{
   .flex-C1 p.flex-prop-1{
     padding-left: calc(50vw - 155px);
   }
+  .sh6gh {
+    padding-left: calc(50vw - 427px);
+  }
 }
 
 @media (max-width:3800px) and (min-width:1001px) {
@@ -65,5 +68,7 @@ body{
   .flex-C1 p.flex-prop-1{
     padding-left: calc(50vw - 155px);
   }
-  
+  .sh6gh {
+    padding-left: calc(50vw - 427px);
+  }
 }
