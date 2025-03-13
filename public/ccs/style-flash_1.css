@@ -37,3 +37,32 @@ body{
     text-align: center; 
     width: 100%;
 }
+@media (max-width:1000px) and (min-width:360px) {
+  .flex-C1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-C1 img.flex-prop-1{
+    width:290px ;
+    height: auto;
+    padding-left: calc(50vw - 155px);
+  }
+  .flex-C1 p.flex-prop-1{
+    padding-left: calc(50vw - 155px);
+  }
+}
+
+@media (max-width:3800px) and (min-width:1001px) {
+  .flex-C1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-C1 img.flex-prop-1{
+    width:290px ;
+    height: auto;
+    padding-left: calc(50vw - 155px);
+  }
+  .flex-C1 p.flex-prop-1{
+    padding-left: calc(50vw - 155px);
+  }
+}
