@@ -59,17 +59,28 @@ body{
 @media (max-width:3800px) and (min-width:1001px) {
   .flex-C1 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .flex-C1 img.flex-prop-1{
     width:290px ;
     height: auto;
-    padding-left: calc(50vw - 155px);
+    margin-left:200px;
+    margin-right:200px;
   }
   .flex-C1 p.flex-prop-1{
-    padding-left: calc(50vw - 155px);
+    padding-left: 10px;
+  }
+  .flex-C1 h1{
+    width:50%;
   }
   .sh6gh {
-    padding-left: calc(50vw - 427px);
+    width: 50vw;
+  }
+  .gwefio{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  div.gwefio div {
+    margin-top: 20px;
   }
 }
