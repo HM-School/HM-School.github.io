@@ -1,100 +1,139 @@
-  .nav-wrapper {
-      display: none;
-      transform: translateY(-3px);
-      background-color: rgba(107, 107, 107, 0.8);
-      border: 2px solid rgba(59, 59, 59, 0.45);
-      border-top-right-radius: 25px;
-      border-bottom-right-radius: 25px;
-      position: absolute;
-      width: 12em;
-      height: fit-content;
-  }
-  .nav-wrapper p.st1 {
-    margin: 0.5em;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
-    border: 2px solid rgba(59, 59, 59, 0.45);
-    border-radius: 100px;
-    background-color: rgba(107, 107, 107, 0.95);;
-  }
-  .nav-wrapper p.st1 a {
-    height:1em;
-    margin:0em;
-    padding:0em;
-  }
-  .nav-wrapper.active {
-      display: block;
-  }
-  .navbar {
-    position: sticky;
-    top: 0;
-  }
-  .navbar ul{
-    list-style-type: none;
-    padding: 5px;
-    margin: 0px;
-    overflow: hidden;
-  }
-  .navbar a{
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    font-weight: 600;
-  }
-  .navbar a.indicate{
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    transition: 0.5s;
-  }
-  .navbar p.indicate{
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    transition: 0.5s;
-  }
-  .navbar button{
-  color: rgba(255, 255, 255, 0.75);
-  text-decoration: none;
-  padding: 14px;
-  display: block;
-  text-align: center;
-  font-weight: 600;
-  font-size: large;
+.dpl3d {
+  z-index:100;
+  position: sticky;
+  top: 0;
+}
+.dpl3d li .left {
+  float: left;
+  background-color: rgba(59, 59, 59, 0.45);
+  border: 2px solid rgba(59, 59, 59, 0.45);
+  border-radius: 5px;
   transition: 0.5s;
-  }
-  .navbar li .left{
-    float: left;
-    background-color: rgba(59, 59, 59, 0.45);
-    border: 2px solid rgba(59, 59, 59, 0.45);
-    border-radius: 5px;
-  }
-  .navbar li .right{
+}
+.dpl3d li .right {
   float: right;
   background-color: rgba(59, 59, 59, 0.45);
   border: 2px solid rgba(59, 59, 59, 0.45);
   border-radius: 5px;
-  }
-  .navbar button:hover{
-    cursor: pointer;
-    background-color: rgba(56, 56, 56, 0.95);
-    scale: 1.1;
-    }
-  .navbar a:hover.indicate{
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.dpl3d ul {
+  list-style-type: none;
+  padding: 5px;
+  margin: 0px;
+  overflow: hidden;
+}
+ul.ghsoq{
+  list-style-type: none;
+  padding: 5px;
+  margin: 0px;
+  overflow: hidden;
+  transform: translateY(-3px);
+  background-color: rgba(107, 107, 107, 0.8);
+  border: 2px solid rgba(59, 59, 59, 0.45);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: absolute;
+  width: 12em;
+  height: fit-content;
+}
+.ghsoq p.st1 {
+  margin: 0.5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  border: 2px solid rgba(59, 59, 59, 0.45);
+  border-radius: 100px;
+  background-color: rgba(107, 107, 107, 0.95);
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.ghsoq p:hover{
   cursor: pointer;
-  background-color: rgba(56, 56, 56, 0.95);
-  scale: 1.1;
-  }
-  .navbar p:hover.indicate{
-    cursor: pointer;
-    background-color: rgba(97, 97, 97, 0.95);
-    scale: 1.05;
-    }
+  background-color: rgba(97, 97, 97, 0.95);
+  scale: 1.05;
+}
+.ghsoq {
+  display: none;
+}
+.dpl3d img:hover{
+cursor: pointer;
+background-color: rgba(56, 56, 56, 0.95);
+scale: 1.1;
+transition: 0.5s;
+}
+.dpl3d li:hover{
+cursor: pointer;
+background-color: rgba(56, 56, 56, 0.95);
+scale: 1.1;
+transition: 0.5s;
+}
+
+
+
+
+.navbar ul{
+  list-style-type: none;
+  padding: 5px;
+  margin: 0px;
+  overflow: hidden;
+}
+.navbar a{
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+}
+.navbar a.indicate{
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.navbar p.indicate{
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.navbar button{
+color: rgba(255, 255, 255, 0.75);
+text-decoration: none;
+padding: 14px;
+display: block;
+text-align: center;
+font-weight: 600;
+font-size: large;
+transition: 0.5s;
+}
+.navbar li .left{
+  float: left;
+  background-color: rgba(59, 59, 59, 0.45);
+  border: 2px solid rgba(59, 59, 59, 0.45);
+  border-radius: 5px;
+}
+.navbar li .right{
+float: right;
+background-color: rgba(59, 59, 59, 0.45);
+border: 2px solid rgba(59, 59, 59, 0.45);
+border-radius: 5px;
+}
+

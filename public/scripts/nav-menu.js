@@ -1,14 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const navMenu = document.querySelector(".nav-menu");
-    const navWrapper = document.querySelector(".nav-wrapper");
+    document.querySelectorAll("[popup-trigger]").forEach(triggerElement => {
+        const targetClass = triggerElement.getAttribute("popup-trigger");
+        const targetElements = document.querySelectorAll(`.${targetClass}`);
 
-    if (navMenu && navWrapper) {
-        const addActiveClass = () => navWrapper.classList.add("active");
-        const removeActiveClass = () => navWrapper.classList.remove("active");
+        if (targetElements.length > 0) {
+            const showElements = () => targetElements.forEach(el => el.style.display = "block");
+            const hideElements = () => targetElements.forEach(el => el.style.display = "none");
 
-        navMenu.addEventListener("mouseenter", addActiveClass);
-        navMenu.addEventListener("mouseleave", removeActiveClass);
-        navWrapper.addEventListener("mouseenter", addActiveClass);
-        navWrapper.addEventListener("mouseleave", removeActiveClass);
-    }
+            triggerElement.addEventListener("mouseenter", showElements);
+            triggerElement.addEventListener("mouseleave", hideElements);
+            
+            targetElements.forEach(target => {
+                target.addEventListener("mouseenter", showElements);
+                target.addEventListener("mouseleave", hideElements);
+            });
+
+            // Ensure they start hidden
+            hideElements();
+        }
+    });
 });
