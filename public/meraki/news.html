@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/ccs/style-news.css"/>
     <link rel="stylesheet" href="/ccs/fontslist.css"/>
     <link rel="stylesheet" href="/ccs/nav-menu.css"/>
+    <script src="/scripts/click-url.js"></script>
 </head>
 <body id="content-wrap">
     <nav class="navbar" style="z-index:100;">
@@ -19,9 +20,7 @@
             <li><a class="right indicate" href="/meraki/login.html">Login</a></li>
         </ul>
         <ul class="nav-wrapper">
-            <p class="indicate st1"><a href="/meraki/news.html">News</a></p>
-            <p class="indicate st1"><a href="/meraki/news/winter-fire-n-ice-ball-2025.html">Winter Ball Flier</a></p>
-            <p class="indicate st1"><a href="/meraki/news/singularity-leader-board.html">Singularity</a></p>
+            <script src="/scripts/nav-menu-injector.js" html-injection="/meraki/nav-list.html" id="nav-menu-injector"></script> 
         </ul>
     </nav><script src="/scripts/nav-menu.js"></script>
     

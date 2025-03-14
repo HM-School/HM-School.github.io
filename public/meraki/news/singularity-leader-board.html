@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/ccs/fontslist.css"/>
     <link rel="stylesheet" href="/ccs/leaderbord-styles.css"/>
     <link rel="stylesheet" href="/ccs/nav-menu.css"/>
-    <script>document.addEventListener("DOMContentLoaded", function () {const targetElement = document.getElementById("pageSize-1");if (!targetElement) return;const allowedClasses = {size: ["1"]};const urlParams = new URLSearchParams(window.location.search);urlParams.forEach((value, key) => {if (allowedClasses[key] && allowedClasses[key].includes(value)) {targetElement.classList.add(`${key}-${value}`);}});});</script>
+    <script src="/scripts/click-url.js"></script>
 </head>
 <body id="content-wrap">
     <nav class="navbar" style="z-index:100;">
@@ -21,12 +21,9 @@
             <li><a class="right indicate" href="/meraki/login.html">Login</a></li>
         </ul>
         <ul class="nav-wrapper">
-            <p class="indicate st1"><a href="/meraki/news.html">News</a></p>
-            <p class="indicate st1"><a href="/meraki/news/winter-fire-n-ice-ball-2025.html">Winter Ball Flier</a></p>
-            <p class="indicate st1"><a href="/meraki/news/singularity-leader-board.html">Singularity</a></p>
+            <script src="/scripts/nav-menu-injector.js" html-injection="/meraki/nav-list.html" id="nav-menu-injector"></script> 
         </ul>
-    </nav>
-    <script src="/scripts/nav-menu.js"></script>
+    </nav><script src="/scripts/nav-menu.js"></script>
 
     <main id="pageSize-1">
         <!--Top 3 Start-->

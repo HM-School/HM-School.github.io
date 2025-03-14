@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/ccs/footer.css"/>
     <link rel="stylesheet" href="/ccs/style-flash_1.css"/>
     <link rel="stylesheet" href="/ccs/nav-menu.css"/>
+    <script src="/scripts/click-url.js"></script>
 </head>
 <body id="content-wrap">
     <nav class="navbar" style="z-index:100;">
@@ -17,12 +18,9 @@
             <li><a class="right indicate" href="/meraki/login.html">Login</a></li>
         </ul>
         <ul class="nav-wrapper">
-            <p class="indicate st1"><a href="/meraki/news.html">News</a></p>
-            <p class="indicate st1"><a href="/meraki/news/winter-fire-n-ice-ball-2025.html">Winter Ball Flier</a></p>
-            <p class="indicate st1"><a href="/meraki/news/singularity-leader-board.html">Singularity</a></p>
+            <script src="/scripts/nav-menu-injector.js" html-injection="/meraki/nav-list.html" id="nav-menu-injector"></script> 
         </ul>
-    </nav>
-    <script src="/scripts/nav-menu.js"></script>
+    </nav><script src="/scripts/nav-menu.js"></script>
 
     <main>
         <div style="border: 0px solid rgba(0, 0, 0, 0);border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;height: 435px;width: 100vw;top: 0;position: absolute;background-image: url(/images/Meraki-Sign-Crop.jpg);background-repeat: no-repeat;background-position: -4vw;background-size: 108vw;background-position: center center;"></div>
