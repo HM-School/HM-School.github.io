@@ -52,6 +52,7 @@ body{
   }
   .sh6gh {
     padding-left: calc(50vw - 427px);
+    width: 100vw;
   }
 }
 
