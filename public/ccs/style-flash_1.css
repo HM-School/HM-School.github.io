@@ -79,6 +79,7 @@ body{
   .gwefio{
     display: flex;
     flex-wrap: nowrap;
+    margin-top: 20px
   }
   div.gwefio div {
     margin-top: 20px;
